@@ -2,7 +2,7 @@
 [
     {
     "id": 60001,
-    "foto": "/public/assets/60001.png",
+    "foto": "/assets/60001.png",
     "articulo": "Agua con gas",
     "descripcion": "BT 600ml",
     "marca": "NATIVA",
@@ -13,7 +13,7 @@
 },
 {
     "id": 60002,
-    "foto": "/public/assets/60002.jpg",
+    "foto": "/assets/60002.jpg",
     "articulo": "Hilo Dental",
     "descripcion": "Con cera 130m",
     "marca": "DENTALCLEAN",
@@ -24,7 +24,7 @@
 },
 {
     "id": 60003,
-    "foto": "/public/assets/60003.jpg",
+    "foto": "/assets/60003.jpg",
     "articulo": "Enjuague Bucal",
     "descripcion": "Blue Diamond",
     "marca": "DENTALCLEAN",
@@ -35,7 +35,7 @@
 },
 {
     "id": 60004,
-    "foto": "/public/assets/60004.jpg",
+    "foto": "/assets/60004.jpg",
     "articulo": "Enjuague Bucal",
     "descripcion": "Green Diamond",
     "marca": "DENTALCLEAN",
@@ -46,7 +46,7 @@
 },
 {
     "id": 60005,
-    "foto": "/public/assets/60005.jpg",
+    "foto": "/assets/60005.jpg",
     "articulo": "Salsa de Soja",
     "descripcion": "150ml",
     "marca": "CEPERA",
@@ -57,7 +57,7 @@
 },
 {
     "id": 60006,
-    "foto": "/public/assets/60006.jpg",
+    "foto": "/assets/60006.jpg",
     "articulo": "Salsa",
     "descripcion": "Calabresa y Pimienta",
     "marca": "CEPERA",
@@ -68,7 +68,7 @@
 },
 {
     "id": 60007,
-    "foto": "/public/assets/60007.jpg",
+    "foto": "/assets/60007.jpg",
     "articulo": "Mayonesa",
     "descripcion": "Salsa y Cebolla",
     "marca": "CEPERA",
@@ -79,7 +79,7 @@
 },
 {
     "id": 60008,
-    "foto": "/public/assets/60008.jpg",
+    "foto": "/assets/60008.jpg",
     "articulo": "Salsa Inglesa",
     "descripcion": "150ml",
     "marca": "CEPERA",
@@ -90,7 +90,7 @@
 },
 {
     "id": 60009,
-    "foto": "/public/assets/60009.png",
+    "foto": "/assets/60009.png",
     "articulo": "Dulce de leche",
     "descripcion": "700g",
     "marca": "LOS NIETITOS",
@@ -101,7 +101,7 @@
 },
 {
     "id": 60010,
-    "foto": "/public/assets/60010.jpg",
+    "foto": "/assets/60010.jpg",
     "articulo": "Coca Cola",
     "descripcion": "Sabor Original 1.5L",
     "marca": "COCA COLA",
@@ -112,7 +112,7 @@
 },  
 {
     "id": 60011,
-    "foto": "/public/assets/60011.png",
+    "foto": "/assets/60011.png",
     "articulo": "Cerveza",
     "descripcion": "340cc",
     "marca": "PATRICIA",
@@ -123,7 +123,7 @@
 },
 {
     "id": 60012,
-    "foto": "/public/assets/60012.png",
+    "foto": "/assets/60012.png",
     "articulo": "Agua Saborizada",
     "descripcion": "Frutte Limonada 1L",
     "marca": "SALUS",
@@ -134,7 +134,7 @@
 },
 {
     "id": 60013,
-    "foto": "/public/assets/limpieza/60013.png",
+    "foto": "/assets/60013.png",
     "articulo": "Limpiador de Baño",
     "descripcion": "450 ml",
     "marca": "CIF",
@@ -145,7 +145,7 @@
 },
 {
     "id": 60014,
-    "foto": "/public/assets/limpieza/60014.png",
+    "foto": "/assets/60014.png",
     "articulo": "Agua lavandina",
     "descripcion": "2 L",
     "marca": "CRISTAL",
@@ -156,7 +156,7 @@
 },
 {
     "id": 60015,
-    "foto": "/public/assets/limpieza/60015.png",
+    "foto": "/assets/60015.png",
     "articulo": "Limpiador de Vidrios",
     "descripcion": "Multiuso Gatillo 500ml",
     "marca": "MR. MUSCULO",
@@ -167,7 +167,7 @@
 },
 {
     "id": 60016,
-    "foto": "/public/assets/limpieza/60016.png",
+    "foto": "/assets/60016.png",
     "articulo": "Limpiador de Cocina",
     "descripcion": "Advanced Doy Pack 450ml",
     "marca": "MR. MUSCULO",
@@ -178,7 +178,7 @@
 },
 {
     "id": 60017,
-    "foto": "/public/assets/limpieza/60017.png",
+    "foto": "/assets/60017.png",
     "articulo": "Papel Higiénico",
     "descripcion": "Sin fin plus x4 un 60m",
     "marca": "HIGIENOL",
@@ -189,7 +189,7 @@
 },
 {
     "id": 60018,
-    "foto": "/public/assets/limpieza/60018.png",
+    "foto": "/assets/60018.png",
     "articulo": "Papel Higiénico Ultra Doble",
     "descripcion": "Hoja 50m 4un",
     "marca": "ELITE",
@@ -200,7 +200,7 @@
 },
 {
     "id": 60019,
-    "foto": "/public/assets/limpieza/60019.png",
+    "foto": "/assets/60019.png",
     "articulo": "Papel Higiénico Húmedo",
     "descripcion": "40 un",
     "marca": "ELITE",
@@ -211,7 +211,7 @@
 },
 {
     "id": 60020,
-    "foto": "/public/assets/perfumeria/60020.png",
+    "foto": "/assets/60020.png",
     "articulo": "Colgate Total 12",
     "descripcion": "Control Sarro 131g",
     "marca": "COLGATE",
@@ -222,7 +222,7 @@
 },
 {
     "id": 60021,
-    "foto": "/public/assets/perfumeria/60021.png",
+    "foto": "/assets/60021.png",
     "articulo": "Jabón de Tocador",
     "descripcion": "Aloe 85g",
     "marca": "PROTEX",
@@ -233,7 +233,7 @@
 },
 {
     "id": 60022,
-    "foto": "/public/assets/perfumeria/60022.png",
+    "foto": "/assets/60022.png",
     "articulo": "Jabón de Tocador",
     "descripcion": "Natural Carbón 90g",
     "marca": "PALMOLIVE",
@@ -244,7 +244,7 @@
 },
 {
     "id": 60023,
-    "foto": "/public/assets/perfumeria/60023.png",
+    "foto": "/assets/60023.png",
     "articulo": "Jabón de Tocador",
     "descripcion": "Cremoso 375g (Pack x3)",
     "marca": "NIVEA",
@@ -255,7 +255,7 @@
 },
 {
     "id": 60024,
-    "foto": "/public/assets/perfumeria/60024.png",
+    "foto": "/assets/60024.png",
     "articulo": "Jabón de Tocador",
     "descripcion": "Relax 90g",
     "marca": "ELITE",
@@ -266,7 +266,7 @@
 },
 {
     "id": 60025,
-    "foto": "/public/assets/perfumeria/60025.png",
+    "foto": "/assets/60025.png",
     "articulo": "Jabón Liquido Vegetal",
     "descripcion": "Mango y Papaya 500ml",
     "marca": "NOBBI",
@@ -277,7 +277,7 @@
 },
 {
     "id": 60026,
-    "foto": "/public/assets/perfumeria/60026.png",
+    "foto": "/assets/60026.png",
     "articulo": "Jabón de Tocador",
     "descripcion": "Characoal 125g",
     "marca": "ASTRAL",
@@ -288,7 +288,7 @@
 },
 {
     "id": 60027,
-    "foto": "/public/assets/limpieza/60027.png",
+    "foto": "/assets/60027.png",
     "articulo": "Jabón de Tocador",
     "descripcion": "Coco 200g",
     "marca": "GIRANDO SOL",
@@ -299,7 +299,7 @@
 },
 {
     "id": 60028,
-    "foto": "/public/assets/limpieza/60028.png",
+    "foto": "/assets/60028.png",
     "articulo": "Quitamanchas",
     "descripcion": "Rosa 450g",
     "marca": "VANISH",
@@ -310,7 +310,7 @@
 },
 {
     "id": 60029,
-    "foto": "/public/assets/bebidas/60029.png",
+    "foto": "/assets/60029.png",
     "articulo": "Bebida isotónica",
     "descripcion": "Manzana 995ml",
     "marca": "POWERADE",
@@ -321,7 +321,7 @@
 },
 {
     "id": 60030,
-    "foto": "/public/assets/bebidas/60030.png",
+    "foto": "/assets/60030.png",
     "articulo": "Refresco",
     "descripcion": "Sabor Original Lata 354ml",
     "marca": "COCA COLA",
@@ -332,7 +332,7 @@
 },
 {
     "id": 60031,
-    "foto": "/public/assets/bebidas/60031.png",
+    "foto": "/assets/60031.png",
     "articulo": "Refresco Pomelo",
     "descripcion": "Sin Azúcar 1.5L",
     "marca": "SALUS",
@@ -343,7 +343,7 @@
 },
 {
     "id": 60032,
-    "foto": "/public/assets/bebidas/60032.png",
+    "foto": "/assets/60032.png",
     "articulo": "Tónica",
     "descripcion": "1.5L",
     "marca": "PASO DE LOS TOROS",
@@ -354,7 +354,7 @@
 },
 {
     "id": 60033,
-    "foto": "/public/assets/almacen/60033.png",
+    "foto": "/assets/60033.png",
     "articulo": "Galleta de Arroz",
     "descripcion": "Clásica 140 g",
     "marca": "SAMAN",
@@ -365,7 +365,7 @@
 },
 {
     "id": 60034,
-    "foto": "/public/assets/almacen/60034.png",
+    "foto": "/assets/60034.png",
     "articulo": "Galleta Multicereal",
     "descripcion": "Multicereal 250g",
     "marca": "LA CELESTINA",
@@ -376,7 +376,7 @@
 },
 {
     "id": 60035,
-    "foto": "/public/assets/almacen/60035.png",
+    "foto": "/assets/60035.png",
     "articulo": "Galleta Finitas",
     "descripcion": "Finitas 300g",
     "marca": "LA CELESTINA",
