@@ -1,4 +1,4 @@
-import "/src/components/CardWidGet/CardWidGet.scss"
+import "../CardWidget/CardWidget.scss"
 import { useState } from "react"
 const CardWidget = () => {
 
