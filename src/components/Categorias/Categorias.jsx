@@ -1,5 +1,4 @@
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
+
 import "../Categorias/Categorias.scss"
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
