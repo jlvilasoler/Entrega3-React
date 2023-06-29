@@ -50,7 +50,7 @@ console.log(isInCart(id))
 
 {
     isInCart(id)
-    ? <Link className="boton-seguir-comprando" to="/Cart">Terminar Compra</Link>
+    ? <Link className="boton-seguir-comprando" to="/Cart">Ver Carrito</Link>
     :                 <ItemCounter
                     max={stock}
                     cantidad={cantidad}
@@ -63,7 +63,7 @@ console.log(isInCart(id))
 
                 <hr />
 
-            <button onClick={handleVolver} className="boton-volver">SEGUIR COMPRANDO</button>
+            <button onClick={handleVolver} className="boton-volver">Seguir Comprando</button>
         </div>
 
 
