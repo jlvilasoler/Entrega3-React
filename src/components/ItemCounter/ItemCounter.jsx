@@ -24,7 +24,7 @@ return (
 
             <br/>
 
-            <button onClick={handleAgregar} className="btn-agregar">AGREGAR A CARRITO</button>
+            <button onClick={handleAgregar} className="btn-agregar">Agregar a Carrito</button>
 
 
     </div>
