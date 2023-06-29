@@ -11,12 +11,12 @@
 .container .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
-  padding-top: 60px;
-  padding-left: 1px;
-  padding-right: 50px;
-  padding-bottom: 70px;
-  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  justify-content: center;
   text-align: center;
   background-color: white;
 }

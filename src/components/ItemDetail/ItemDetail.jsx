@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import ItemCounter from "../ItemCounter/ItemCounter";
 import "../ItemDetail/ItemDetail.scss"
 import { Link, useNavigate } from "react-router-dom";
+import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ id, foto, articulo, descripcion, marca, precio, category, seccion, stock }) => {
+    
+    const {agregarAlCarrito, isInCart} = useContext(CartContext)
+console.log(isInCart(id))
+
     const [cantidad, setCounter] = useState(1)
 
     const navigate = useNavigate();
@@ -11,7 +16,8 @@ const ItemDetail = ({ id, foto, articulo, descripcion, marca, precio, category, 
 
     const handleAgregar = () => {
         const item = { id, foto, articulo, descripcion, marca, precio, category, seccion, stock, cantidad }
-        console.log(item)
+        
+        agregarAlCarrito(item)
     }
 
     const handleVolver = () => {
@@ -41,18 +47,22 @@ const ItemDetail = ({ id, foto, articulo, descripcion, marca, precio, category, 
             </div>
 
 
-            <div>
-                <ItemCounter
+
+{
+    isInCart(id)
+    ? <Link className="boton-seguir-comprando" to="/Cart">Terminar Compra</Link>
+    :                 <ItemCounter
                     max={stock}
                     cantidad={cantidad}
                     setCounter={setCounter}
                     handleAgregar={handleAgregar}
                 />
+}
 
 
 
                 <hr />
-        </div>
+
             <button onClick={handleVolver} className="boton-volver">SEGUIR COMPRANDO</button>
         </div>
 

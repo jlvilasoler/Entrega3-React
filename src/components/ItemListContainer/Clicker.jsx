@@ -70,7 +70,6 @@ export const Clicker = ( {init=0 ,step=1}) => {
             <button className="boton_reset" onClick={reset}> RESET </button>
             <p className="contador">{counter} unidades</p>
             <button onClick = {agregar_articulo} className="boton_agregar"> AGREGAR </button>
-            <button className="boton_detalles"> 🔍 </button>
         </div>
     )}
 

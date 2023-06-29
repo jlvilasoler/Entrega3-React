@@ -1,11 +1,18 @@
+
+
 .boton-ver {
     border-radius: 7px;
     color: #ffffff;
     background-color: #081cd1;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
     padding: 15px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+
 }
 
 .boton-ver:hover {
@@ -14,9 +21,13 @@
     transition: 0.3s;
   }
   
+
+
+
 //IMAGEN ARTICULO
 .col-2 img {
-    width: 150px;
+    width: 180px;
+    height: 200px;
 }
 
 //ARTICULO PRODUCTO
@@ -32,7 +43,7 @@
 
 //MARCA PRODUCTO
 .col-2 p {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0px;
 
 }
@@ -40,9 +51,16 @@
 
 //PRECIO
 .col-2 .precio {
-    font-size: 28px;
+    font-size: 25px;
     padding-bottom: 15px;
     font-weight: 600;
     color:#313334;
+}
+
+.col-2 {
+    border: rgb(226, 226, 226) solid 1px;
+    width: 230px;
+    height: 420px;
+    background-color: rgb(244, 244, 244);
 }
 
