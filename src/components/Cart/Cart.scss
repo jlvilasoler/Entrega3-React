@@ -150,12 +150,12 @@ footer {
 
 .derecha-titulo {
     text-align:start;
-    padding-bottom: 400px;
+    padding-bottom: 50px;
     font-size: 25px;
     font-style: italic;
     text-decoration:underline;
-
 }
+
 
 .derecha-detalle {
     padding-bottom: 20px;
@@ -214,4 +214,27 @@ footer {
     background-color: rgb(71, 192, 71);
     border-color: rgb(5, 173, 5);
     color: rgb(231, 231, 231);
+}
+
+
+
+//BOTONES CARRITO
+
+.botones-carrito {
+    display: flex;
+    margin-left: 400px;
+    align-content: left;
+    padding: 10px;
+}
+
+.boton-seguir-comprando {
+    margin: 0 auto;
+    height: 55px;
+    width: 230px;
+    background-color: rgb(44, 150, 9);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-color: rgb(115, 115, 115);
+    font-size: 25px;
+    padding-bottom: 8px;
 }

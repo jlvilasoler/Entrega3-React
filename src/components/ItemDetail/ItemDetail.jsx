@@ -6,7 +6,7 @@ import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ id, foto, articulo, descripcion, marca, precio, category, seccion, stock }) => {
     
-    const {agregarAlCarrito, isInCart} = useContext(CartContext)
+    const {agregarAlCarrito, isInCart, handleSumar, handleRestar} = useContext(CartContext)
 console.log(isInCart(id))
 
     const [cantidad, setCounter] = useState(1)
@@ -56,6 +56,8 @@ console.log(isInCart(id))
                     cantidad={cantidad}
                     setCounter={setCounter}
                     handleAgregar={handleAgregar}
+                    handleSumar={handleSumar}
+                    handleRestar={handleRestar}
                 />
 }
 

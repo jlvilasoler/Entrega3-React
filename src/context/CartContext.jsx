@@ -32,6 +32,10 @@ export const CartProvider = ({children}) => {
       setCart([])
     }
 
+
+
+
+
     return(
         <CartContext.Provider value={{
             cart,

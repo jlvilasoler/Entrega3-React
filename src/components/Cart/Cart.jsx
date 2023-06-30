@@ -5,11 +5,16 @@ import { CartContext } from "../../context/CartContext";
 import {FaTrashAlt} from "react-icons/fa"
 import {FaShoppingCart} from "react-icons/fa"
 import { Link } from "react-router-dom"
+import "../CardWidget/CardWidget"
+import "../ItemDetail/ItemDetail"
+import "../ItemCounter/ItemCounter"
+
 
 function Cart() {
 
-    const { cart, totalCompra, cantidadProductos, vaciarCarrito, eliminarArticulo } = useContext(CartContext)
 
+
+    const { cart, totalCompra, cantidadProductos, vaciarCarrito, eliminarArticulo } = useContext(CartContext)
 
     if (cart.length === 0) {
         return (
@@ -82,13 +87,21 @@ function Cart() {
                                         
                                     </div>
                                     <button onClick={() => eliminarArticulo(producto.id)} className="boton-vaciar-carrito-art"><FaTrashAlt/></button>
-                                </div>
+                                    </div>
+                                    
+                                    <br/>
 
-                                
+                                    {/*<div className="contador-cart">
+                                    <button className="btn btn-primary" onClick={sumarProducto}> ➕ </button>
+                                    <span className="display">{producto.cantidad}</span>
+                                    <button className="btn btn-primary" onClick={restarProducto}> ➖ </button>
+                                    </div>*/}
+
+                                    <br/>
 
                                 <div className="info-prod">
-                                <p>Precio: $:{producto.precio}</p>
                                 <p>Cantidad: {producto.cantidad}</p>
+                                <p>Precio: ${producto.precio}</p>
                                 <p className="info-precio-total">Total: ${(producto.cantidad)*(producto.precio)}</p>
                                 </div>
                                 <hr />
@@ -96,9 +109,10 @@ function Cart() {
                             </div>
                         ))
                     }
-                    
+                <div className="botones-carrito">
                     <button onClick={vaciarCarrito} className="boton-vaciar-carrito"> Vaciar Carrito <FaTrashAlt/></button>
-
+                    <Link to={"/"} className="boton-seguir-comprando">Seguir Comprando</Link>
+                    </div>
                 </div>
 
 
