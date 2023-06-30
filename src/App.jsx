@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import Header from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Contacto from "./components/Contacto/Contacto";
@@ -12,27 +12,19 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Categorias from "./components/Categorias/Categorias"
 import Nosotros from "./components/Nosotros/Nosotros"
 import Cart from "./components/Cart/Cart"
-import { CartContext } from "./context/CartContext";
+import { CartProvider } from "./context/CartContext";
+
 
 
 
 function App() {
-  const [cart, setCart] = useState([])
-  console.log(cart)
 
-  const agregarAlCarrito = (item) => {
-    setCart([...cart, item])
-  }
-
-  const isInCart = (id) => {
-    return cart.some((producto) => producto.id === id)
-  }
 
 
   return (
+<CartProvider>
 
-    <CartContext.Provider value={{cart, agregarAlCarrito, isInCart}}>
-      <BrowserRouter>
+<BrowserRouter>
         <Header />
 
 
@@ -53,7 +45,13 @@ function App() {
 
         <Footer />
       </BrowserRouter>
-    </CartContext.Provider>
+
+
+
+</CartProvider>
+
+      
+
 
 
 

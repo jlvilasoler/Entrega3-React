@@ -2,10 +2,13 @@
     .CardWidget {
         color: white;
         font-size: 22px;
+        margin-right: 40px;
 
 
         .CardWidget_icono {
-          color:rgb(131, 130, 130);
+          color: white;
+
+          
         }
       }
   
@@ -23,4 +26,9 @@
 .CardWidget_monto {
   display: flex;
   
+}
+
+.span-cart {
+  font-size: 20px;
+  text-decoration: underline;
 }

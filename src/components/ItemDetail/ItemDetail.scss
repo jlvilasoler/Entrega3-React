@@ -2,12 +2,12 @@
     display:grid;
     background-color: rgb(42, 42, 42);
     color:white;
-    width: 37%;
+    width: 35%;
     height: 100%;
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 15px;
-    margin-top: 30px;
+    margin-top: 70px;
   }
   
   //DETALLE MARCA
@@ -37,8 +37,8 @@
   
   //TAMAÑO IMAGEN ARTICULO
   .container-consola .imagen-consola {
-    width: 75%;
-    padding-left: 110px;
+    width: 60%;
+    padding-left: 100px;
     border-radius: 3px;
   }
   
@@ -46,9 +46,10 @@
   //PRECIO ARTICULO
   .container-consola .precio-consola {
     font-size: 38px;
-    padding-top: 2px;
+    padding-top: 0px;
     text-align: center;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     background-color: rgb(42, 42, 42);
   }
   

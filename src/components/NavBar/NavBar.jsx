@@ -28,9 +28,10 @@ const Header = () => {
                     
                     <Link className="header_link" to="/">🏠</Link>
                     <Link className="header_link" to="/MenuInicio">👤</Link>
-                    <CardWidget/>
+                    
                     
                 </nav>
+                <CardWidget/>
             </div>
 
 
