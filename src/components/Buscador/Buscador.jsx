@@ -2,6 +2,7 @@ import "../Buscador/Buscador.scss"
 import { useRef } from "react"
 import { useSearchParams } from "react-router-dom"
 
+
 const Buscador = () => {
     const [, setSearchParams] = useSearchParams()
 
@@ -27,7 +28,13 @@ const Buscador = () => {
 
     return (
 
+
+
+
         <form className="search" onSubmit={handleSubmit}>
+    
+
+
                 <input 
                 ref={ref}
                 className="form-control"
@@ -36,7 +43,7 @@ const Buscador = () => {
                 
                 <button onClick={handleReset} type="reset" className="boton-borrar"> X </button>
                 <button type="submit" className="boton-buscar">🔍</button>
-
+                
         </form>
 
     )

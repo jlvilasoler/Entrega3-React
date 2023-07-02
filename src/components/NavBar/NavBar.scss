@@ -7,6 +7,41 @@
   top: 0;
   width: 100%;
 
+.header_nav_derecha {
+  padding-left: 80px;
+  justify-content: center;
+  margin: 10px;
+  font-size: 21px;
+}
+
+.header_link_home {
+  margin: 10px;
+}
+
+.header_link_home:hover {
+  color: #bababa;
+  transition: 0.3s;
+  border-top: 2px solid rgb(86, 86, 86);
+  background-color: rgb(42, 42, 42);
+  border-radius: solid 10px;
+  border-bottom: 2px solid rgb(86, 86, 86);
+  font-size: 24px;
+}
+
+.header_link_login {
+  font-size: 21px;
+}
+
+.header_link_login:hover {
+  color: #bababa;
+  transition: 0.3s;
+  border-top: 2px solid rgb(86, 86, 86);
+  background-color: rgb(42, 42, 42);
+  border-radius: solid 10px;
+  border-bottom: 2px solid rgb(86, 86, 86);
+  font-size: 24px;
+}
+
   .header_container {
     max-width: 100%;
     height: 70px;
@@ -29,7 +64,7 @@
   .header_nav {
     display: flex;
     gap: 24px;
-    padding-left: 540px;
+    padding-left: 670px;
     align-items: center;
 
     /* NAV LINKS BOTONES */
@@ -57,4 +92,12 @@
   padding-left: 1489px;
 }
 
+
+.contador-gasto-total {
+  display: flex;
+  font-size: 13px;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 40px;
+}
 

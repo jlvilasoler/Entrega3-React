@@ -14,7 +14,7 @@ const ItemCard = ({ id, foto , articulo , descripcion , marca , precio}) => {
       <h2>{articulo}</h2>
       <h3>{descripcion}</h3>
       <p>{marca}</p>
-      <p className="precio">${precio}</p>
+      <p className="precio">${precio.toFixed(2)}</p>
 
 
       <Link className="boton-ver" to={`/detail/${id}`}>Ver más</Link>

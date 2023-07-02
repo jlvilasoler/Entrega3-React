@@ -2,8 +2,8 @@ import { useContext } from "react";
 import "../Cart/Cart.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartContext } from "../../context/CartContext";
-import {FaTrashAlt} from "react-icons/fa"
-import {FaShoppingCart} from "react-icons/fa"
+import { FaTrashAlt } from "react-icons/fa"
+import { FaShoppingCart } from "react-icons/fa"
 import { Link } from "react-router-dom"
 import "../CardWidget/CardWidget"
 import "../ItemDetail/ItemDetail"
@@ -18,13 +18,13 @@ function Cart() {
 
     if (cart.length === 0) {
         return (
-  
+
             <main>
                 <header className="micarrito">
-                <div>MIS COMPRAS</div>
-                <div className="cart"><FaShoppingCart/> </div>
-                
-           
+                    <div>MIS COMPRAS</div>
+                    <div className="cart"><FaShoppingCart /> </div>
+
+
                 </header>
 
                 <div className="contenido">
@@ -34,25 +34,25 @@ function Cart() {
                 </div>
 
                 <footer>
-                    
+
                 </footer>
 
 
                 <div className="derecha">
 
-                <h5 className="derecha-titulo">
-                    RESUMEN TOTAL:
-                </h5>
-          
+                    <h5 className="derecha-titulo">
+                        RESUMEN TOTAL:
+                    </h5>
 
-                <h5  className="derecha-detalle">
-                    Cantidad Articulos: {cantidadProductos()}
-                </h5>
 
-                <h5  className="derecha-detalle">
-                    Total Facturado: ${totalCompra()} 
-                </h5>
-            </div>
+                    <h5 className="derecha-detalle">
+                        Cantidad Articulos: {cantidadProductos()}
+                    </h5>
+
+                    <h5 className="derecha-detalle">
+                        Total Facturado: ${totalCompra()}
+                    </h5>
+                </div>
             </main>
         )
     }
@@ -63,10 +63,10 @@ function Cart() {
 
             <main>
                 <header className="micarrito">
-                <div>MIS COMPRAS</div>
-                <div className="cart"><FaShoppingCart/> </div>
-                
-           
+                    <div>MIS COMPRAS</div>
+                    <div className="cart"><FaShoppingCart /> </div>
+
+
                 </header>
 
 
@@ -80,74 +80,74 @@ function Cart() {
 
                                     <div className="imagen-container">
 
-                                    <div className="container-boton-eliminar-art">
-                                        <button onClick={() => eliminarArticulo(producto.id)} className="boton-vaciar-carrito-art"><FaTrashAlt/></button>
+                                        <div className="container-boton-eliminar-art">
+                                            <button onClick={() => eliminarArticulo(producto.id)} className="boton-vaciar-carrito-art"><FaTrashAlt /></button>
                                         </div>
 
-                                    <p className="id">Id: {producto.id}</p>
+                                        <p className="id">Id: {producto.id}</p>
                                         <img className="imagen" src={producto.foto} alt={producto.articulo} />
                                         <h5 className="producto"> {producto.articulo} </h5>
                                         <h5 className="marca"> {producto.marca} </h5>
                                         <h5 className="desc"> {producto.descripcion} </h5>
-   
-                                        
-                                    </div>
-                                    
-                                    </div>
-                                    
-                                    <br/>
 
-                                    {/*<div className="contador-cart">
+
+                                    </div>
+
+                                </div>
+
+                                <br />
+
+                                {/*<div className="contador-cart">
                                     <button className="btn btn-primary" onClick={sumarProducto}> ➕ </button>
                                     <span className="display">{producto.cantidad}</span>
                                     <button className="btn btn-primary" onClick={restarProducto}> ➖ </button>
                                     </div>*/}
 
-                                    <br/>
+                                <br />
 
                                 <div className="info-prod">
-                                <p>Cantidad: {producto.cantidad}</p>
-                                <p>Precio: ${producto.precio}</p>
-                                <p className="info-precio-total">Total: ${(producto.cantidad)*(producto.precio)}</p>
+                                    <p>Cantidad: {producto.cantidad}</p>
+                                    <p>Precio: ${producto.precio.toFixed(2)}</p>
+                                    <p className="info-precio-total">Total: ${((producto.cantidad) * (producto.precio)).toFixed(2)}</p>
                                 </div>
                                 <hr />
 
                             </div>
                         ))
                     }
-                <div className="botones-carrito">
-                    <button onClick={vaciarCarrito} className="boton-vaciar-carrito"> Vaciar Carrito <FaTrashAlt/></button>
-                    <Link to={"/"} className="boton-seguir-comprando">Seguir Comprando</Link>
+                    <div className="botones-carrito">
+                        <button onClick={vaciarCarrito} className="boton-vaciar-carrito"> Vaciar Carrito <FaTrashAlt /></button>
+                        <Link to={"/"} className="boton-seguir-comprando">Seguir Comprando</Link>
                     </div>
                 </div>
 
 
 
                 <footer>
-                    
+
                 </footer>
 
-          
+
                 <div className="derecha">
-                <h5 className="derecha-titulo">
-                    RESUMEN TOTAL:
-                </h5>
-          
+                    <h5 className="derecha-titulo">
+                        RESUMEN TOTAL:
+                    </h5>
 
-          
 
-                <h5  className="derecha-detalle">
-                    Cantidad Articulos: {cantidadProductos()}
-                </h5>
 
-                <h5  className="derecha-detalle">
-                    Total Facturado: ${totalCompra()} 
-                </h5>
-       
-                
-            </div>
 
-            
+                    <h5 className="derecha-detalle">
+                        Cantidad Articulos: {cantidadProductos()}
+                    </h5>
+
+                    <h5 className="derecha-detalle">
+                        Total Facturado: ${totalCompra()}
+                    </h5>
+
+
+                </div>
+
+
             </main>
 
 

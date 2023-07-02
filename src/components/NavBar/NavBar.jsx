@@ -2,6 +2,7 @@ import "/src/components/NavBar/NavBar.scss"
 import CardWidget from "../CardWidget/CardWidget"
 import { Link } from "react-router-dom"
 import Buscador from "../Buscador/Buscador"
+import CounterNav from "../CounterNav/CounterNav"
 
 const Header = () => {
 
@@ -24,17 +25,20 @@ const Header = () => {
                     <Link className="header_link" to="/productos/limpieza">LIMPIEZA</Link>
                     <Link className="header_link" to="/productos/almacen">ALMACEN</Link>
                     
-                    <Link className="header_link" to="/Contacto">CONTACTO</Link>
                     
-                    <Link className="header_link" to="/">🏠</Link>
-                    <Link className="header_link" to="/MenuInicio">👤</Link>
-                    
+                    <div className="header_nav_derecha">
+                    <Link className="header_link_home" to="/">🏠</Link>
+                    <Link className="header_link_login" to="/MenuInicio">👤</Link>
+                    </div>
                     
                 </nav>
                 <CardWidget/>
+                
             </div>
 
-
+                <div className="contador-gasto-total">
+                <CounterNav/>
+                </div>
         </header>
     )
 
