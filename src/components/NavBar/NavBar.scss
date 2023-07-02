@@ -8,14 +8,14 @@
   width: 100%;
 
 .header_nav_derecha {
-  padding-left: 80px;
-  justify-content: center;
-  margin: 10px;
+  padding: left;
   font-size: 21px;
+  display: block;
 }
 
 .header_link_home {
-  margin: 10px;
+  margin: 15px;
+  font-size: 21px;
 }
 
 .header_link_home:hover {

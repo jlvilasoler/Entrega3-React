@@ -39,19 +39,16 @@ const ItemListContainer = () => {
               ? productos.filter((producto) => producto.articulo.includes(search))
               : productos
 
-              if (loading) {
-                  return (
-                    <div className="container">
-                      <h2 className="container-cargando">Cargando...</h2>
-                    </div>
-                  )
-              }
 
-              return (
-                    <div className="container">
-                        <ItemList items={listado}/>
-                    </div>
-                    );
-              };
+    return (
+    <div className="container">
+      
+      {
+        loading? <h3 className='cargando'>Cargando...</h3> : <ItemList items={listado}/>
+      }
+
+    </div>
+  );
+};
 
 export default ItemListContainer;
