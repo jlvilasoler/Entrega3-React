@@ -8,7 +8,7 @@ main {
     padding-right: 0px;
 }
 
-main > * {
+main>* {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -16,22 +16,22 @@ main > * {
     padding-top: 60px;
 
     grid-template-areas:
-    "header"
-    "izquierda"
-    "contenido"
-    "derecha"
-    "footer";
+        "header"
+        "izquierda"
+        "contenido"
+        "derecha"
+        "footer";
 }
 
 //RESPONSIVE
 @media (min-width: 500px) {
     main {
         grid-template-areas:
-        "header header header"
-        "izquierda contenido derecha"
-        "footer footer footer";
+            "header header header"
+            "izquierda contenido derecha"
+            "footer footer footer";
 
-        grid-template-columns: 5fr 2fr 1fr ;
+        grid-template-columns: 5fr 2fr 1fr;
 
     }
 }
@@ -41,7 +41,7 @@ main > * {
 
 //NOMBRAR AREAS
 header {
-   grid-area: header;
+    grid-area: header;
 }
 
 aside:first-of-type {
@@ -77,26 +77,38 @@ footer {
 .contenido {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 85%;
     height: 100%;
     background-color: rgb(246, 246, 246);
-    padding-top: 30px;
-    padding-left: 50px;
+    padding-top: 15px;
+    padding-left: 10px;
     padding-right: 40px;
     box-shadow: 0 0.688em 0em rgb(51, 51, 51);
     border-radius: 0px 3px 0px 0px;
 }
 
+.contenido .art{
+    background-color: rgb(246, 246, 246);
+
+
+}
+
 .mensaje-carrito-vacio {
-    padding-top: 40px;
-    font-size: 35px;
+    padding-top: 30px;
+    font-size: 22px;
+    margin-bottom: 200px;
+    text-align: center;
 }
 
 
+
+
 // CART DERECHA
+
+
 .derecha {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     width: 150%;
     height: 700px;
     padding-right: 9%;
@@ -112,20 +124,76 @@ footer {
 
 
 // ID (CART DE IZQUIERDA)
-.imagen .id {
+.id {
+    padding-top: 60px;
+    padding-right: 20px;
     background-color: rgb(242, 242, 242);
     padding-bottom: 0px;
     margin-bottom: 0px;
     font-size: 12px;
+    justify-content: center;
 }
 
 .info-prod {
-    margin-left: 500px;
+    margin-left: 540px;
 }
+
+.imagen-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.producto {
+    padding-top: 60px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.marca {
+    padding-top: 60px;
+}
+
+.desc {
+    padding-top: 60px;
+    padding-left: 10px;
+    background-color: rgb(246, 246, 246);
+}
+
 
 .imagen {
     width: 140px;
 }
+
+.imagen-container {
+    padding-top: 0px;
+}
+
+.container-boton-eliminar-art{
+    display: flex;
+    flex-direction: row;
+    padding-right: 60px;
+    padding-top: 45px;
+    justify-content: center;
+}
+
+.boton-vaciar-carrito-art {
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(170, 14, 14);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-color: rgb(115, 115, 115);
+}
+
+.boton-vaciar-carrito-art:hover {
+    background-color: rgb(213, 56, 9);
+    color: rgb(255, 255, 255);
+    border-color: rgb(115, 115, 115);
+}
+
+
 
 .info-precio-total {
     color: crimson;
@@ -149,11 +217,11 @@ footer {
 
 
 .derecha-titulo {
-    text-align:start;
+    text-align: start;
     padding-bottom: 350px;
     font-size: 25px;
     font-style: italic;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 
@@ -181,24 +249,9 @@ footer {
 }
 
 
-.boton-vaciar-carrito-art {
-    margin: 0 auto;
-    height: 40px;
-    width: 50px;
-    background-color: rgb(170, 14, 14);
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-    border-color: rgb(115, 115, 115);
-    font-size: 25px;
-}
 
-.boton-vaciar-carrito-art:hover {
-    background-color: rgb(213, 56, 9);
-    color: rgb(255, 255, 255);
-    border-color: rgb(115, 115, 115);
-}
 
-.boton-ir-a-comprar{
+.boton-ir-a-comprar {
     margin: 0 auto;
     height: 55px;
     width: 230px;
@@ -210,6 +263,7 @@ footer {
     padding-top: 8px;
     border-color: rgb(64, 156, 64);
 }
+
 .boton-ir-a-comprar:hover {
     background-color: rgb(71, 192, 71);
     border-color: rgb(5, 173, 5);
@@ -222,7 +276,7 @@ footer {
 
 .botones-carrito {
     display: flex;
-    margin-left: 400px;
+
     align-content: left;
     padding: 10px;
 }

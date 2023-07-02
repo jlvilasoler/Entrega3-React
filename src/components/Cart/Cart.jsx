@@ -28,7 +28,7 @@ function Cart() {
                 </header>
 
                 <div className="contenido">
-                    <h1 className="mensaje-carrito-vacio"> El carrito está vacio... </h1>
+                    <h4 className="mensaje-carrito-vacio"> Por el momento no hay articulos en el carrito... </h4>
                     <Link to={"/"} className="boton-ir-a-comprar"> Ir a comprar </Link>
 
                 </div>
@@ -78,15 +78,21 @@ function Cart() {
 
                                 <div className="art">
 
-                                    <div className="imagen">
+                                    <div className="imagen-container">
+
+                                    <div className="container-boton-eliminar-art">
+                                        <button onClick={() => eliminarArticulo(producto.id)} className="boton-vaciar-carrito-art"><FaTrashAlt/></button>
+                                        </div>
+
                                     <p className="id">Id: {producto.id}</p>
                                         <img className="imagen" src={producto.foto} alt={producto.articulo} />
-                                        <h5> {producto.articulo} </h5>
-                                        <h5> {producto.descripcion} </h5>
-                                        <h5> {producto.marca} </h5>
+                                        <h5 className="producto"> {producto.articulo} </h5>
+                                        <h5 className="marca"> {producto.marca} </h5>
+                                        <h5 className="desc"> {producto.descripcion} </h5>
+   
                                         
                                     </div>
-                                    <button onClick={() => eliminarArticulo(producto.id)} className="boton-vaciar-carrito-art"><FaTrashAlt/></button>
+                                    
                                     </div>
                                     
                                     <br/>
@@ -121,12 +127,13 @@ function Cart() {
                     
                 </footer>
 
-
+          
                 <div className="derecha">
-
                 <h5 className="derecha-titulo">
                     RESUMEN TOTAL:
                 </h5>
+          
+
           
 
                 <h5  className="derecha-detalle">
@@ -138,8 +145,8 @@ function Cart() {
                 </h5>
        
                 
-
             </div>
+
             
             </main>
 
