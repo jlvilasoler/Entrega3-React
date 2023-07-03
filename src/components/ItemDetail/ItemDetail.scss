@@ -37,9 +37,10 @@
   
   //TAMAÑO IMAGEN ARTICULO
   .container-consola .imagen-consola {
-    width: 60%;
-    padding-left: 100px;
+    width: 40%;
+    margin: 0 auto;
     border-radius: 3px;
+    justify-content: center;
   }
   
   
@@ -50,6 +51,7 @@
     text-align: center;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    margin: 0 auto;
     background-color: rgb(42, 42, 42);
   }
   

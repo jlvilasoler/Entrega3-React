@@ -2,7 +2,6 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext";
 
-
 const CounterNav = () => {
 
     const {totalCompra} = useContext(CartContext) 

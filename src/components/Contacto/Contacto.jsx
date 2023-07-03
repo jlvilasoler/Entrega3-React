@@ -1,7 +1,7 @@
 import "../Contacto/Contacto.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
-
+import React, { useRef } from 'react';
 
 function SizesExample() {
 
@@ -35,31 +35,14 @@ function SizesExample() {
                             <h3 class="contactanos"> CONTACTO: </h3>
 
 
-                            <label className="label">DOCUMENTO:</label>
-                            <input type="text" placeholder="Ingrese Número de documento" maxLength="10" id="documento" name="documento" class="form-control"></input>
-
-
-                            <hr className="hr" />
+                            <label className="label">NOMBRE COMPLETO:</label>
+                            <input type="text" placeholder="Ingrese Nombre Completo" maxLength="15" id="nombre_completo" name="nombre_completo" class="form-control"></input>
 
 
 
-                            <label className="label">PRIMER NOMBRE:</label>
-                            <input type="text" placeholder="Ingrese Primer Nombre" maxLength="15" id="primer_nombre" name="primer_nombre" class="form-control"></input>
+                            <label className="label">APELLIDOS:</label>
+                            <input type="text" placeholder="Ingrese Apellidos" maxLength="15" id="apellidos" name="apellidos" class="form-control"></input>
 
-
-
-                            <label className="label">SEGUNDO NOMBRE:</label>
-                            <input type="text" placeholder="Ingrese Segundo Nombre" maxLength="15" id="segundo_nombre" name="segundo_nombre" class="form-control"></input>
-
-
-
-                            <label className="label">PRIMER APELLIDO:</label>
-                            <input type="text" placeholder="Ingrese Primer Apellido" maxLength="15" id="primer_apellido" name="primer_apellido" class="form-control"></input>
-
-
-
-                            <label className="label">SEGUNDO APELLIDO:</label>
-                            <input type="text" placeholder="Ingrese Segundo Apellido" maxLength="15" id="segundo_apellido" name="segundo_apellido" class="form-control"></input>
 
 
                             <div class="form-group">
@@ -176,12 +159,6 @@ function SizesExample() {
 
                             <label className="label">CELULAR:</label>
                             <input type="text" placeholder="Ingrese Número de Celular" id="celular" name="celular" class="form-control"></input>
-
-
-
-                            <label className="label">TELEFONO:</label>
-                            <input type="text" placeholder="Ingrese Número de Teléfono" id="telefono" name="telefono" class="form-control"></input>
-
 
 
                             <div class="form-group">

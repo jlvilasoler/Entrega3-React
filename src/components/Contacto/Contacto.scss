@@ -12,7 +12,7 @@
   box-shadow: inset 1px 1px 1px 1px;
   color:#ffffff;
   margin: 50px auto;
-  height: 1600px;
+  height: 1230px;
   margin-top: 150px;
 }
 
@@ -29,10 +29,13 @@
 
 .contacto .container-form {
   background-color: rgb(42, 42, 42);
-  height: 1450px;
+  height: 1100px;
 }
 
-
+.form-control:hover{
+  background-color: white;   
+  color: crimson;
+}
 
 
 .div .form-group {
@@ -64,3 +67,5 @@
   padding-top: 20px;
   padding-left: 150px;
 }
+
+

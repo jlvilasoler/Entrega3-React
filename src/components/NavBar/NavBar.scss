@@ -7,40 +7,30 @@
   top: 0;
   width: 100%;
 
-.header_nav_derecha {
-  padding: left;
-  font-size: 21px;
-  display: block;
-}
-
-.header_link_home {
-  margin: 15px;
-  font-size: 21px;
-}
-
-.header_link_home:hover {
-  color: #bababa;
-  transition: 0.3s;
-  border-top: 2px solid rgb(86, 86, 86);
-  background-color: rgb(42, 42, 42);
-  border-radius: solid 10px;
-  border-bottom: 2px solid rgb(86, 86, 86);
-  font-size: 24px;
-}
-
-.header_link_login {
-  font-size: 21px;
-}
-
-.header_link_login:hover {
-  color: #bababa;
-  transition: 0.3s;
-  border-top: 2px solid rgb(86, 86, 86);
-  background-color: rgb(42, 42, 42);
-  border-radius: solid 10px;
-  border-bottom: 2px solid rgb(86, 86, 86);
-  font-size: 24px;
-}
+  .header_nav_derecha {
+    padding: left;
+    font-size: 20px;
+    padding-bottom: 4px;
+  }
+  
+  .header_link_home {
+    margin: 15px;
+    font-size: 22px;
+    color: white;
+    margin-left: 50px;
+  }
+  
+  .header_link_home:hover {
+    color: #bababa;
+    transition: 0.3s;
+    border-top: 2px solid rgb(86, 86, 86);
+    background-color: rgb(42, 42, 42);
+    border-radius: solid 10px;
+    border-bottom: 2px solid rgb(86, 86, 86);
+    font-size: 26px;
+  }
+  
+  
 
   .header_container {
     max-width: 100%;
@@ -54,7 +44,7 @@
 
   /* LOGO */
   .header_logo {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 700;
     color: white;
     padding-left: 25px;
@@ -80,7 +70,7 @@
       background-color: rgb(42, 42, 42);
       border-radius: solid 10px;
       border-bottom: 2px solid rgb(86, 86, 86);
-      font-size: 24px;
+      font-size: 21px;
     }
   }
 }
@@ -99,5 +89,13 @@
   flex-direction: row;
   justify-content: right;
   margin-right: 40px;
+
 }
 
+.contador-gasto-total:hover {
+  display: flex;
+  font-size: 13px;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 40px;
+}

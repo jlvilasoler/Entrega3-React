@@ -15,13 +15,20 @@ export const CartProvider = ({children}) => {
       setCart( cart.filter((producto) => producto.id != id ))
     }
 
-
     const isInCart = (id) => {
       return cart.some((producto) => producto.id === id)
     }
 
     const totalCompra = () => {
       return cart.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0).toFixed(2)
+    }
+
+    const totalIva = () => {
+      return cart.reduce((acc, producto) => (acc + producto.precio * producto.cantidad)*(0.22/1.22), 0).toFixed(2)
+    }
+
+    const totalSinIva = () => {
+      return cart.reduce((acc, producto) => (acc + producto.precio * producto.cantidad)/(1.22), 0).toFixed(2)
     }
 
     const cantidadProductos = () => {
@@ -44,7 +51,9 @@ export const CartProvider = ({children}) => {
             totalCompra,
             cantidadProductos,
             vaciarCarrito,
-            eliminarArticulo
+            eliminarArticulo,
+            totalIva,
+            totalSinIva
         }}>
             {children}
             

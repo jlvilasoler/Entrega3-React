@@ -1,0 +1,16 @@
+.header_link_login {
+    font-size: 19px;
+    color: white;
+    margin-left: 100px;
+
+  }
+  
+  .header_link_login:hover {
+    color: #bababa;
+    transition: 0.3s;
+    border-top: 2px solid rgb(86, 86, 86);
+    background-color: rgb(42, 42, 42);
+    border-radius: solid 10px;
+    border-bottom: 2px solid rgb(86, 86, 86);
+    font-size: 21px;
+  }

@@ -5,7 +5,7 @@ import { CartContext } from "../../context/CartContext";
 import { FaTrashAlt } from "react-icons/fa"
 import { FaShoppingCart } from "react-icons/fa"
 import { Link } from "react-router-dom"
-import "../CardWidget/CardWidget"
+import "../CardWidget/CartWidget"
 import "../ItemDetail/ItemDetail"
 import "../ItemCounter/ItemCounter"
 
@@ -14,7 +14,7 @@ function Cart() {
 
 
 
-    const { cart, totalCompra, cantidadProductos, vaciarCarrito, eliminarArticulo } = useContext(CartContext)
+    const { cart, totalCompra, cantidadProductos, vaciarCarrito, eliminarArticulo, totalIva, totalSinIva } = useContext(CartContext)
 
     if (cart.length === 0) {
         return (
@@ -38,20 +38,32 @@ function Cart() {
                 </footer>
 
 
-                <div className="derecha">
 
+                <div className="derecha">
                     <h5 className="derecha-titulo">
                         RESUMEN TOTAL:
                     </h5>
 
 
+                    <h5 className="derecha-detalle-cant">
+                        Cantidad de Articulos: {cantidadProductos()}
+                    </h5>
+                    
                     <h5 className="derecha-detalle">
-                        Cantidad Articulos: {cantidadProductos()}
+                        Total sin Iva: ${totalSinIva()}
+                    </h5>
+                    
+                    <h5 className="derecha-detalle">
+                        Iva: ${totalIva()}
+                    </h5>
+                    <hr/>
+                    <h5 className="derecha-detalle">
+                        Total a Pagar: ${totalCompra()}
                     </h5>
 
-                    <h5 className="derecha-detalle">
-                        Total Facturado: ${totalCompra()}
-                    </h5>
+                    <div className="botones-pagar">
+                        <Link to={""} className="boton-pagar">Pagar</Link>
+                    </div>
                 </div>
             </main>
         )
@@ -136,14 +148,25 @@ function Cart() {
 
 
 
-                    <h5 className="derecha-detalle">
-                        Cantidad Articulos: {cantidadProductos()}
+                    <h5 className="derecha-detalle-cant">
+                        Cantidad de Articulos: {cantidadProductos()}
                     </h5>
 
                     <h5 className="derecha-detalle">
-                        Total Facturado: ${totalCompra()}
+                        Total sin Iva: ${totalSinIva()}
                     </h5>
 
+                    <h5 className="derecha-detalle">
+                        Iva: ${totalIva()}
+                    </h5>
+                    <hr/>
+                    <h5 className="derecha-detalle">
+                        Total a Pagar: ${totalCompra()}
+                    </h5>
+
+                    <div className="botones-pagar">
+                        <Link to={""} className="boton-pagar">Pagar</Link>
+                    </div>
 
                 </div>
 

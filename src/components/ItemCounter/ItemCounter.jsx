@@ -18,9 +18,11 @@ const ItemCounter = ({max, cantidad, setCounter, handleAgregar}) => {
 
 return (
     <div className="contador">
-            <button onClick={handleRestar} className="btn btn-primary">➖</button>
+            <button onClick={handleRestar} className={cantidad===0 ? "btn btn-danger"  : "btn btn-primary"} disabled={cantidad === 0}>➖</button>
+
             <span className="mx-3">{cantidad}</span>
-            <button onClick={handleSumar} className="btn btn-primary">➕</button>
+
+            <button onClick={handleSumar} className={cantidad===max ? "btn btn-danger" : "btn btn-primary"} disabled={cantidad === max}>➕</button>
 
             <br/>
 

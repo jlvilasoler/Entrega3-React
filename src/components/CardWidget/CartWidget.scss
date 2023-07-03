@@ -1,0 +1,44 @@
+    /* BOTON CART EN NAVBAR */
+    .CartWidget {
+        color: white;
+        font-size: 24px;
+        margin-right: 40px;
+        visibility: visible;
+
+        .Cart-Widget-Active {
+          visibility: visible;
+          color:#b8e386;
+        }
+
+        .CartWidget_icono {
+          color: white;
+          opacity: 1;
+        }
+
+        .CartWidget:hover {
+          color: #bababa;
+          transition: 0.3s;
+          background-color: rgb(42, 42, 42);
+          border-top: 2px solid rgb(86, 86, 86);
+          border-bottom: 2px solid rgb(86, 86, 86);
+          border-radius: solid 10px;
+          font-size: 23px;
+        }
+
+        .CartWidget_monto {
+          display: flex;
+        }
+
+        .span-cart {
+          font-size: 18px;
+          text-decoration: underline;
+        }
+      }
+  
+
+
+
+
+
+
+

@@ -35,6 +35,7 @@ console.log(isInCart(id))
 
             <h2 className="articulo-consola">{articulo}</h2>
             <h3 className="descripcion-consola">{descripcion}</h3>
+            
             <hr />
 
 

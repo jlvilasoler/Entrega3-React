@@ -1,8 +1,10 @@
 import "/src/components/NavBar/NavBar.scss"
-import CardWidget from "../CardWidget/CardWidget"
+import CartWidget from "../CardWidget/CartWidget"
 import { Link } from "react-router-dom"
 import Buscador from "../Buscador/Buscador"
 import CounterNav from "../CounterNav/CounterNav"
+import { FaHome } from "react-icons/fa";
+import HeaderLinkLogin from "../HeaderLinkLogin/HeaderLinkLogin"
 
 const Header = () => {
 
@@ -25,17 +27,17 @@ const Header = () => {
                     <Link className="header_link" to="/productos/limpieza">LIMPIEZA</Link>
                     <Link className="header_link" to="/productos/almacen">ALMACEN</Link>
                     
-                    
+
                     <div className="header_nav_derecha">
-                    <Link className="header_link_home" to="/">🏠</Link>
-                    <Link className="header_link_login" to="/MenuInicio">👤</Link>
+                    <Link className="header_link_home" to="/"><FaHome /></Link>
+
                     </div>
-                    
                 </nav>
-                <CardWidget/>
+                <HeaderLinkLogin/>
+                <CartWidget/>
                 
             </div>
-
+            
                 <div className="contador-gasto-total">
                 <CounterNav/>
                 </div>
