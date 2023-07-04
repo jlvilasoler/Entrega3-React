@@ -110,14 +110,14 @@ footer {
     display: flex;
     flex-direction: column;
     width: 150%;
-    height: 650px;
+    height: 600px;
     padding-right: 9%;
     background-color: rgb(42, 42, 42);
     color: white;
     box-shadow: 0 0.188em 1.50em rgb(51, 51, 51);
     border-radius: 15px 0px 0px 15px;
-    padding-bottom: 10px;
-    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-top: 60px;
 }
 
 
@@ -202,6 +202,7 @@ footer {
     font-size: 20px;
     text-align: right;
     font-weight: bold;
+
 }
 
 
@@ -217,30 +218,40 @@ footer {
     font-size: 20px;
 }
 
-
+// TITULO (CART DE DERECHA)
 .derecha-titulo {
     text-align: center;
-    padding-bottom: 120px;
+    padding-bottom: 10px;
     font-size: 25px;
     font-style: italic;
     text-decoration: underline;
-    margin-bottom: 10px;
+
 }
 
-
-.derecha-detalle {
-    padding-bottom: 10px;
-    font-size: 20px;
-    text-align: right;
-    padding-top: 10px;
+.cont {
+    margin-top: 100px;
 }
+
 
 .derecha-detalle-cant {
-    padding-bottom: 80px;
-    font-size: 20px;
     text-align: right;
-    padding-top: 10px;
 }
+
+.derecha-detalle-sin-iva {
+    text-align: right;
+}
+
+.derecha-detalle-total-iva {
+    text-align: right;
+}
+
+
+.derecha-detalle-total {
+padding-bottom: 100px;
+text-align: right;
+}
+
+
 
 .boton-vaciar-carrito {
     margin: 0 auto;
@@ -305,12 +316,24 @@ footer {
 
 
 
+
+.derecha-detalle-date {
+    color:rgb(131, 131, 131);
+    padding-top: 50px;
+    font-size: 10px;
+    text-align: right;
+    margin: 0 left;
+}
+
+
+
 .botones-pagar {
     display: flex;
     justify-content: center;
     text-align: center;
     align-content: left;
-    padding-top: 80px;
+    margin-bottom: 0px;
+    padding-top: 0px;
 }
 
 .boton-pagar {

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import "../Cart/Cart.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartContext } from "../../context/CartContext";
@@ -15,6 +15,8 @@ function Cart() {
 
 
     const { cart, totalCompra, cantidadProductos, vaciarCarrito, eliminarArticulo, totalIva, totalSinIva } = useContext(CartContext)
+
+    const fecha = useMemo(() => new Date().toLocaleString(), [])
 
     if (cart.length === 0) {
         return (
@@ -45,24 +47,31 @@ function Cart() {
                     </h5>
 
 
-                    <h5 className="derecha-detalle-cant">
-                        Cantidad de Articulos: {cantidadProductos()}
-                    </h5>
-                    
-                    <h5 className="derecha-detalle">
-                        Total sin Iva: ${totalSinIva()}
-                    </h5>
-                    
-                    <h5 className="derecha-detalle">
-                        Iva: ${totalIva()}
-                    </h5>
-                    <hr/>
-                    <h5 className="derecha-detalle">
-                        Total a Pagar: ${totalCompra()}
-                    </h5>
+                    <div className="cont">
+                        <h5 className="derecha-detalle-cant">
+                            Cantidad de Articulos: {cantidadProductos()}
+                        </h5>
 
-                    <div className="botones-pagar">
-                        <Link to={""} className="boton-pagar">Pagar</Link>
+                        <h5 className="derecha-detalle-sin-iva">
+                            Total sin Iva: ${totalSinIva()}
+                        </h5>
+
+                        <h5 className="derecha-detalle-total-iva">
+                            Iva: ${totalIva()}
+                        </h5>
+                        <hr />
+                        <h5 className="derecha-detalle-total">
+                            Total a Pagar: ${totalCompra()}
+                        </h5>
+
+
+                        <div className="botones-pagar">
+                            <Link to={""} className="boton-pagar">Pagar</Link>
+                        </div>
+
+                        <h5 className="derecha-detalle-date">
+                        Aún no hay articulos
+                        </h5>
                     </div>
                 </div>
             </main>
@@ -146,26 +155,31 @@ function Cart() {
                     </h5>
 
 
+                    <div className="cont">
+                        <h5 className="derecha-detalle-cant">
+                            Cantidad de Articulos: {cantidadProductos()}
+                        </h5>
+
+                        <h5 className="derecha-detalle-sin-iva">
+                            Total sin Iva: ${totalSinIva()}
+                        </h5>
+
+                        <h5 className="derecha-detalle-total-iva">
+                            Iva: ${totalIva()}
+                        </h5>
+                        <hr />
+                        <h5 className="derecha-detalle-total">
+                            Total a Pagar: ${totalCompra()}
+                        </h5>
 
 
-                    <h5 className="derecha-detalle-cant">
-                        Cantidad de Articulos: {cantidadProductos()}
-                    </h5>
+                        <div className="botones-pagar">
+                            <Link to={""} className="boton-pagar">Pagar</Link>
+                        </div>
 
-                    <h5 className="derecha-detalle">
-                        Total sin Iva: ${totalSinIva()}
-                    </h5>
-
-                    <h5 className="derecha-detalle">
-                        Iva: ${totalIva()}
-                    </h5>
-                    <hr/>
-                    <h5 className="derecha-detalle">
-                        Total a Pagar: ${totalCompra()}
-                    </h5>
-
-                    <div className="botones-pagar">
-                        <Link to={""} className="boton-pagar">Pagar</Link>
+                        <h5 className="derecha-detalle-date">
+                            Ultima actualizacion del carrito: {fecha}
+                        </h5>
                     </div>
 
                 </div>
