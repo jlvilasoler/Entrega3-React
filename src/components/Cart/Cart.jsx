@@ -105,7 +105,7 @@ function Cart() {
                                             <button onClick={() => eliminarArticulo(producto.id)} className="boton-vaciar-carrito-art"><FaTrashAlt /></button>
                                         </div>
 
-                                        <p className="id">Id: {producto.id}</p>
+                                        
                                         <img className="imagen" src={producto.foto} alt={producto.articulo} />
                                         <h5 className="producto"> {producto.articulo} </h5>
                                         <h5 className="marca"> {producto.marca} </h5>
