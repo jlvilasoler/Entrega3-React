@@ -15,26 +15,6 @@
 
 
 
-.menuinicio .intro {
-    text-align: center;
-    color:#ffffff;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.menuinicio {
-    display: flex;
-    flex-direction: column;
-    max-width: 35em;
-    max-height: 30em;
-    padding: 1.3em;
-    margin: 0 auto;
-    background-color: rgb(42, 42, 42);
-    font-weight: bold;
-    border-radius: 15px;
-    color:#ffffff;
-    box-shadow: 0 0.188em 1.50em rgb(51, 51, 51)
-}
 
 .container-form {
     margin: 0px;
@@ -44,16 +24,24 @@
 
 .container-inicio{
     margin: 0 auto;
-    padding-top: 160px;
-    padding-bottom: 100px;
-    min-width: 120vh;
-
+    width: 70px;
+    height: 350px;
+    margin-top: 200px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    min-width: 60vh;
+    background-color: rgb(42, 42, 42);
+    border-radius: 15px;
+    box-shadow: 0 0.188em 1.50em rgb(51, 51, 51)
 }
 
 
 .intro {
     font-size: 25px;
     background-color: rgb(42, 42, 42);
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
 }
 
 
@@ -65,6 +53,7 @@
     border-radius: 10px;
     border-color: rgb(42, 42, 42);
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .boton-form-entrar {
