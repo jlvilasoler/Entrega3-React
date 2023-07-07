@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../MenuInicio/MenuInicio.scss';
+import { AuthContext } from '../../context/AuthContext';
 
 
 const MenuInicio = () => {
 
+    const {login, googleLogin, facebookLogin} = useContext(AuthContext)
+ 
     const [values, setValues] = useState({
         email: "",
         password: ""
@@ -23,8 +26,7 @@ const MenuInicio = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("submit");
-        console.log(values);
+        login(values)
 
     };
 
@@ -49,8 +51,14 @@ const MenuInicio = () => {
 
                     <div className="botones-form">
                         <button type="submit" className="boton-form-entrar">Iniciar sesión</button>
+                        <button className="boton-form-entrar-google" onClick={googleLogin}><img src={"/assets/google.png"} className='imagen-google' ></img> Iniciar sesión con Google</button>
+                        <button className="boton-form-entrar-google" onClick={facebookLogin}><img src={"/assets/facebook.png"} className='imagen-google' ></img> Iniciar sesión con Facebook</button>
+                    
                     </div>
                 </form>
+
+                
+
             </div>
 
             <div className="aviso_registro">

@@ -5,15 +5,19 @@ import Buscador from "../Buscador/Buscador"
 import CounterNav from "../CounterNav/CounterNav"
 import { FaHome } from "react-icons/fa";
 import HeaderLinkLogin from "../HeaderLinkLogin/HeaderLinkLogin"
+import { useContext } from "react"
+import { AuthContext } from "../../context/AuthContext"
 
 const Header = () => {
+    const { user, logOut} = useContext(AuthContext)
 
     return (
 
         
         <header className="header">
+
             <div className="buscador">
-                        <Buscador/>
+                        
             </div>   
 
             <div className="header_container">
@@ -34,13 +38,24 @@ const Header = () => {
                     </div>
                 </nav>
                 <HeaderLinkLogin/>
+                
                 <CartWidget/>
                 
             </div>
             
                 <div className="contador-gasto-total">
+                
                 <CounterNav/>
                 </div>
+                <div className="panel-usuario">
+                        <button className="btn btn-danger" onClick={logOut}>Logout</button>    
+                        <p className="panel-mail">{user.email}</p>
+                </div>
+
+                <div className="barra-buscador">
+                    <Buscador/>
+                </div>
+                
         </header>
     )
 

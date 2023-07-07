@@ -25,14 +25,14 @@
 .container-inicio{
     margin: 0 auto;
     width: 70px;
-    height: 350px;
+    height: 600px;
     margin-top: 200px;
     padding-top: 20px;
     padding-bottom: 50px;
     min-width: 60vh;
     background-color: rgb(42, 42, 42);
     border-radius: 15px;
-    box-shadow: 0 0.188em 1.50em rgb(51, 51, 51)
+    box-shadow: 0 0.188em 1.50em rgb(51, 51, 51);
 }
 
 
@@ -54,6 +54,7 @@
     border-color: rgb(42, 42, 42);
     margin: 0 auto;
     margin-top: 30px;
+    padding-bottom: 20px;
 }
 
 .boton-form-entrar {
@@ -123,6 +124,25 @@ input:focus {
 
 .form-group label {
     padding: 0px;
+}
+
+.imagen-google {
+    width: 9%;
+}
+
+.boton-form-entrar-google {
+    margin-top: 65px;
+    background-color:#0512c6;
+    color: white;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #101ff8;
+}
+
+.boton-form-entrar-google:hover {
+    background-color:#2734e0;
+
 }
 
 /*

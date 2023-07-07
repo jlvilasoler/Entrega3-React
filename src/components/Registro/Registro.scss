@@ -1,81 +1,126 @@
-
-  .registro {
-    max-width: 35em;
-    padding: 1.9em;
-    background-color: rgb(42, 42, 42);
-    font-weight: bold;
-    border-radius: 15px;
-    box-shadow: inset 1px 1px 1px 1px;
-    color:#ffffff;
-    margin: 50px auto;
-    height: 1300px;
-    margin-top: 150px;
-  }
+* {
+  margin: 0;
+  box-sizing: border-box;
   
-  
-  .registrate {
-    background-color: rgb(42, 42, 42);
-    text-align: center;
-    padding: 20px;
-    margin:0%;
-    padding-bottom: 30px;
-    padding-top: 30px;
-
-  }
-  
-  
-  .registro .container-form {
-    background-color: rgb(42, 42, 42);
-    height: 1000px;
-  }
-  
-  
-  .bot{
-   text-align: center;
-  }
-  
-  .div .form-group {
-    font-size: 90px;
-    height: 100px;
-  }
-  
-  .label {
-    font-size: 13px;
-    padding-top: 15px;
-  }
-  
-
-.boton-form-confirmar {
-    background-color:#0512c6;
-    color: white;
-    width: 30%;
-    height: 50px;
-    border-radius: 10px;
-    border-color: #101ff8;
 }
 
-.boton-form-confirmar:hover {
-    background-color:#3bc849;
-    color: rgb(0, 0, 0);
-    border-color: #707070;
+.page {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.boton-form-cancelar {
-    background-color:#777778;
-    color: white;
-    width: 30%;
-    height: 50px;
-    border-radius: 10px;
-    border-color: #707070;
+
+
+
+
+.container-form {
+  margin: 0px;
+  background-color: rgba(252, 252, 252, 0.773);
+
 }
 
-.boton-form-cancelar:hover {
-    background-color:#b8b8b8;
-    color: rgb(0, 0, 0);
-    border-color: #707070;
+.container-inicio{
+  margin: 0 auto;
+  width: 70px;
+  height: 350px;
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  min-width: 60vh;
+  background-color: rgb(42, 42, 42);
+  border-radius: 15px;
+  box-shadow: 0 0.188em 1.50em rgb(51, 51, 51)
 }
 
-.botones-registro {
-    padding-left: 150px;
-    padding-top: 180px;
+
+.intro {
+  font-size: 25px;
+  background-color: rgb(42, 42, 42);
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+}
+
+
+.botones-form {
+  background-color:rgb(42, 42, 42);
+  color: white;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  border-color: rgb(42, 42, 42);
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.boton-form-entrar {
+  background-color:#0512c6;
+  color: white;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  border-color: #101ff8;
+}
+
+.boton-form-entrar:hover {
+  background-color:#2734e0;
+
+}
+
+.aviso_registro {
+  padding: 100px;
+  text-align: center;
+}
+
+.registrar {
+  color: red;
+}
+
+
+.olvido {
+  color:white;
+  text-align: right;
+  font-size: 13px;
+  padding: 5px;
+
+}
+
+
+.menuinicio .intro {
+  background-color: rgb(42, 42, 42);
+}
+
+
+.form-group{
+  font-size: 22px;
+  width: 80%;
+  margin: 0 auto;
+  height: 70px;
+  border-radius: 0.25em;
+}
+
+.form-group input {
+  font-size: 18px;
+  background-color: white;
+  height: 45px;
+  width: 100%;
+  border-radius: 0.25em;
+  text-align: left;
+  color: black;
+}
+
+.form-group input:hover {
+  background-color: #c2c6fed9;
+  color: #2734e0;
+}
+
+input:focus {
+  outline-color: rgb(42, 42, 42);
+}
+
+.form-group label {
+  padding: 0px;
 }
