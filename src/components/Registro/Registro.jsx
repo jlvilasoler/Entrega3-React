@@ -53,7 +53,9 @@ const Registro = () => {
                 </form>
             </div>
 
-
+            <div className="aviso_registro">
+                <Link className="volver-menu-inicio" to="/MenuInicio">Ya tengo cuenta</Link>
+            </div>
         </div>
     );
 };

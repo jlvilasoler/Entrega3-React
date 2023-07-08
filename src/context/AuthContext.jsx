@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup,onAuthStateChanged, signOut } from "firebase/auth";
-import { auth, provider, providerFacebook } from "../firebase/config";
+import { auth, provider } from "../firebase/config";
 
 export const  AuthContext = createContext()
 
@@ -55,13 +55,9 @@ const logOut = () => {
         signInWithPopup(auth, provider)    
     }
 
-    //REGISTRO CON FACEBOOK
-    const facebookLogin = () => {
-        signInWithPopup(auth, providerFacebook)    
-    }
     
     return (
-    <AuthContext.Provider value = {{googleLogin, facebookLogin, user, login, register, logOut}}>
+    <AuthContext.Provider value = {{googleLogin, user, login, register, logOut}}>
             {children}
     </AuthContext.Provider>
     )

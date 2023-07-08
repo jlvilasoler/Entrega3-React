@@ -53,6 +53,7 @@ const ItemListContainer = () => {
   const listado = search
               ? productos.filter((producto) => producto.articulo.includes(search))
               : productos
+              
 
 
     return (
