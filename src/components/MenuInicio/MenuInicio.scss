@@ -25,7 +25,7 @@
 .container-inicio{
     margin: 0 auto;
     width: 70px;
-    height: 600px;
+    height: 480px;
     margin-top: 200px;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -131,7 +131,7 @@ input:focus {
 }
 
 .boton-form-entrar-google {
-    margin-top: 65px;
+    margin-top: 20px;
     background-color:#0512c6;
     color: white;
     width: 80%;
@@ -144,6 +144,22 @@ input:focus {
     background-color:#2734e0;
 
 }
+
+.boton-form-entrar-facebook {
+    margin-top: 20px;
+    background-color:#0512c6;
+    color: white;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #101ff8;
+}
+
+.boton-form-entrar-facebook:hover {
+    background-color:#2734e0;
+
+}
+
 
 /*
 @font-face {

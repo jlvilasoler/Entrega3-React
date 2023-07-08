@@ -52,7 +52,7 @@ const MenuInicio = () => {
                     <div className="botones-form">
                         <button type="submit" className="boton-form-entrar">Iniciar sesión</button>
                         <button className="boton-form-entrar-google" onClick={googleLogin}><img src={"/assets/google.png"} className='imagen-google' ></img> Iniciar sesión con Google</button>
-                        <button className="boton-form-entrar-google" onClick={facebookLogin}><img src={"/assets/facebook.png"} className='imagen-google' ></img> Iniciar sesión con Facebook</button>
+                        <button className="boton-form-entrar-facebook" onClick={facebookLogin}><img src={"/assets/facebook.png"} className='imagen-google' ></img> Iniciar sesión con Facebook</button>
                     
                     </div>
                 </form>
