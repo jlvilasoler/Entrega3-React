@@ -284,6 +284,7 @@ text-align: right;
     text-align: center;
     padding-top: 8px;
     border-color: rgb(64, 156, 64);
+    text-decoration: none;
 }
 
 .boton-ir-a-comprar:hover {
@@ -300,6 +301,7 @@ text-align: right;
     display: flex;
     align-content: left;
     padding: 10px;
+    font-style: none;
 }
 
 .boton-seguir-comprando {
@@ -312,6 +314,7 @@ text-align: right;
     border-color: rgb(115, 115, 115);
     font-size: 25px;
     padding-bottom: 8px;
+    text-decoration: none;
 }
 
 
@@ -341,12 +344,13 @@ text-align: right;
     height: 55px;
     width: 280px;
     background-color: rgb(0, 17, 164);
-
+    font-style: none;
     color: rgb(255, 255, 255);
     border-radius: 8px;
     border-color: rgb(0, 0, 0);
     font-size: 25px;
     padding-top: 8px;
+    text-decoration: none;
 }
 
 .boton-pagar:hover {

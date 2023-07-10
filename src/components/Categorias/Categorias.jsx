@@ -23,20 +23,20 @@ function SizesExample() {
 
             <section class="botones">
 
-                    <div>
-                    <Link className="boton btn btn-danger" to="/productos/perfumeria">PERFUMERIA</Link>
+                    <div className="btncat">
+                    <Link className="boton" to="/productos/perfumeria">PERFUMERIA</Link>
                     </div>
 
-                    <div>
-                    <Link className="boton btn btn-danger" to="/productos/limpieza">LIMPIEZA</Link>
+                    <div className="btncat">
+                    <Link className="boton" to="/productos/limpieza">LIMPIEZA</Link>
                     </div>
 
-                <div>
-                    <Link className="boton btn btn-danger" to="/productos/almacen">ALMACEN</Link>
+                    <div className="btncat">
+                    <Link className="boton" to="/productos/almacen">ALMACEN</Link>
                 </div>
                     
-                <div>
-                    <Link className="boton btn btn-danger" to="/productos/bebidas">BEBIDAS</Link>
+                <div className="btncat">
+                    <Link className="boton" to="/productos/bebidas">BEBIDAS</Link>
                 </div>
 
                 <hr />

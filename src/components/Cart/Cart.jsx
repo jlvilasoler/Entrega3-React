@@ -70,7 +70,7 @@ function Cart() {
                         </div>
 
                         <h5 className="derecha-detalle-date">
-                        Aún no hay articulos
+                            Aún no hay articulos
                         </h5>
                     </div>
                 </div>
@@ -105,13 +105,10 @@ function Cart() {
                                             <button onClick={() => eliminarArticulo(producto.id)} className="boton-vaciar-carrito-art"><FaTrashAlt /></button>
                                         </div>
 
-                                        
                                         <img className="imagen" src={producto.foto} alt={producto.articulo} />
                                         <h5 className="producto"> {producto.articulo} </h5>
                                         <h5 className="marca"> {producto.marca} </h5>
                                         <h5 className="desc"> {producto.descripcion} </h5>
-
-
                                     </div>
 
                                 </div>
@@ -174,7 +171,7 @@ function Cart() {
 
 
                         <div className="botones-pagar">
-                            <Link to={""} className="boton-pagar">Pagar</Link>
+                            <Link to={"/Checkout"} className="boton-pagar">Pagar</Link>
                         </div>
 
                         <h5 className="derecha-detalle-date">

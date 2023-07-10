@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer";
 import Contacto from "../components/Contacto/Contacto";
 import Registro from "../components/Registro/Registro";
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
-
+import Checkout from "../components/Checkout/Checkout";
 import MenuInicio from "../components/MenuInicio/MenuInicio";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailContainer";
@@ -22,34 +22,42 @@ const AppRouter = () => {
     return (
         <BrowserRouter>
 
-          {user.logged ? <>
             <Header />
 
-            <Routes>
-              <Route path="/categorias" element={<Categorias />} />
-              <Route path="/" element={<ItemListContainer />} />
-              <Route path="/productos/:categoryId" element={<ItemListContainer />} />
-              <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
-              <Route path="/Contacto" element={<Contacto />} />
-              <Route path="/MenuInicio" element={<MenuInicio />} />
-              <Route path="/Nosotros" element={<Nosotros />} />
-              <Route path="/Cart" element={<Cart />} />
-              <Route path="*" element={<Navigate to={"/"} />} />
+            {user.logged ? <>
+                <Routes>
+                    <Route path="/categorias" element={<Categorias />} />
+                    <Route path="/" element={<ItemListContainer />} />
+                    <Route path="/productos/:categoryId" element={<ItemListContainer />} />
+                    <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+                    <Route path="/Contacto" element={<Contacto />} />
+                    <Route path="/MenuInicio" element={<MenuInicio />} />
+                    <Route path="/Registro" element={<Registro />} />
+                    <Route path="/Nosotros" element={<Nosotros />} />
+                    <Route path="/Cart" element={<Cart />} />
+                    <Route path="*" element={<Navigate to={"/"} />} />
+                    <Route path="/Checkout" element={<Checkout />} />
 
-            </Routes>
+                </Routes>
+
+            </>
+                : <Routes>
+                    <Route path="/Nosotros" element={<Nosotros />} />
+                    <Route path="/categorias" element={<Categorias />} />
+                    <Route path="/login" element={<MenuInicio />} />
+                    <Route path="/Registro" element={<Registro />} />
+                    <Route path="*" element={<Navigate to="/login" />} />
+                    <Route path="/Contacto" element={<Contacto />} />
+                    <Route path="/" element={<ItemListContainer />} />
+                    <Route path="/productos/:categoryId" element={<ItemListContainer />} />
+                    <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+                    <Route path="/Cart" element={<Cart />} />
+                </Routes>
+
+
+            }
+
             <Footer />
-          </>
-            : <Routes>
-
-              <Route path="/login" element={<MenuInicio />} />
-              <Route path="/Registro" element={<Registro />} />
-              <Route path="*" element={<Navigate to="/login" />} />
-            </Routes>
-
-
-          }
-
-
 
         </BrowserRouter>
     )
