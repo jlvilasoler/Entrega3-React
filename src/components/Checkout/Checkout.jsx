@@ -1,13 +1,13 @@
-import { useContext, useState } from "react"
+import React, { useState } from "react"
 import "../Checkout/Checkout.scss"
-import { Link } from "react-router-dom"
-import { CartContext, useCartContex } from "../../context/CartContext"
+import { useCartContex } from "../../context/CartContext"
+import { collection, addDoc } from "firebase/firestore"
+import { db } from "../../firebase/config"
 
 const Checkout = () => {
 
     const { cart, totalCompra } = useCartContex()
-
-
+    
     const [values, setValues] = useState({
         nombre: "",
         apellidos: "",
@@ -22,11 +22,10 @@ const Checkout = () => {
         tarjetanombre: "",
         tarjetacodigo: "",
         tarjetavencimiento: ""
-    })
+})
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
         if (
             values.nombre === "" ||
             values.apellidos === "" ||
@@ -45,21 +44,23 @@ const Checkout = () => {
             alert("Para completar la operación, se deben completar todos los campos");
             return;
         } else {
-            alert("Su solicitud está siendo procesada. Nos comunicaremos con usted a la brevedad. Muchas gracias!");
+            alert("Compra efectuada con exito. Muchas gracias!");
             return;
         }
-
-
-        const order = {
+    }
+        const orden = {
             cliente: values,
             items: cart,
             total: totalCompra(),
             fecha: new Date()
         }
-        console.log(order)
-    }
 
-    if (cart.lenght === 0) {
+        const ordersRef = collection(db, "orders")
+        addDoc(ordersRef, orden)
+        .then((doc) => console.log(doc.id))
+    
+
+    if (cart.length === 0) {
         return <Navigate to="/" />
     }
 
@@ -190,13 +191,14 @@ const Checkout = () => {
                 <h3 className="medio-pago">Ingrese Medio de Pago:</h3>
 
                 <select type="text" placeholder="Tipo de Medio de Pago" values={values.mediopago} onChange={handleInputChange} className="form-control my-2" name="mediopago">
+                    <option value="Ingrese">Ingrese tipo de medio de pago</option>
                     <option value="debito">Tarjeta de Debito</option>
                     <option value="credito">Tarjeta de Credito</option>
                 </select>
 
-                <input type="text" placeholder="Ingrese Número de 15 digitos" values={values.tarjetanumero} onChange={handleInputChange} className="form-control my-2" name="tarjetanumero" maxlength="15"/>
+                <input type="text" placeholder="Ingrese Número de 15 digitos" values={values.tarjetanumero} onChange={handleInputChange} className="form-control my-2" name="tarjetanumero" maxLength="15"/>
                 <input type="text" placeholder="Ingrese Nombre Completo" values={values.tarjetanombre} onChange={handleInputChange} className="form-control my-2" name="tarjetanombre" />
-                <input type="text" placeholder="Ingrese Código de tres digitos" values={values.tarjetacodigo} onChange={handleInputChange} className="form-control my-2" name="tarjetacodigo" maxlength="3"/>
+                <input type="text" placeholder="Ingrese Código de tres digitos" values={values.tarjetacodigo} onChange={handleInputChange} className="form-control my-2" name="tarjetacodigo" maxLength="3"/>
                 <input type="date" placeholder="Ingrese fecha de vencimiento al dorso" values={values.tarjetavencimiento} onChange={handleInputChange} className="form-control my-2" name="tarjetavencimiento" />
 
                 <hr />

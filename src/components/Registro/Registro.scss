@@ -1,127 +1,31 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-  
-}
-
-.page {
-  height: 100vh;
-  width: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-.container-form {
-  margin: 0px;
-  background-color: rgba(252, 252, 252, 0.773);
-
-}
-
-.container-inicio{
+.boton-registro {
   margin: 0 auto;
-  width: 70px;
-  height: 350px;
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  min-width: 60vh;
-  background-color: rgb(42, 42, 42);
-  border-radius: 15px;
-  box-shadow: 0 0.188em 1.50em rgb(51, 51, 51)
-}
-
-
-.intro {
+  height: 55px;
+  width: 280px;
+  background-color: rgb(0, 17, 164);
+  font-style: none;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border-color: rgb(0, 0, 0);
   font-size: 25px;
-  background-color: rgb(42, 42, 42);
-  text-align: center;
-  padding-bottom: 30px;
-  color: white;
+  padding-top: 8px;
+  text-decoration: none;
 }
 
-
-.botones-form {
-  background-color:rgb(42, 42, 42);
-  color: white;
-  width: 80%;
-  text-align: center;
-  border-radius: 10px;
-  border-color: rgb(42, 42, 42);
-  margin: 0 auto;
-  margin-top: 30px;
+.boton-registro:hover {
+  background-color: rgb(36, 47, 205);
+  color: rgb(255, 255, 255);
+  border-color: rgb(202, 202, 202);
 }
 
-.boton-form-entrar {
-  background-color:#0512c6;
-  color: white;
-  width: 80%;
-  height: 50px;
-  border-radius: 10px;
-  border-color: #101ff8;
-}
-
-.boton-form-entrar:hover {
-  background-color:#2734e0;
+.botones-reg {
+  padding-top: 40px;
+  padding-left: 59px;
 
 }
 
-.aviso_registro {
-  padding: 100px;
-  text-align: center;
+.informacion {
+margin-top: 90px;
+text-align: center;
+margin-bottom: 10px;
 }
-
-.registrar {
-  color: red;
-}
-
-
-.olvido {
-  color:white;
-  text-align: right;
-  font-size: 13px;
-  padding: 5px;
-
-}
-
-
-.menuinicio .intro {
-  background-color: rgb(42, 42, 42);
-}
-
-
-.form-group{
-  font-size: 22px;
-  width: 80%;
-  margin: 0 auto;
-  height: 70px;
-  border-radius: 0.25em;
-}
-
-.form-group input {
-  font-size: 18px;
-  background-color: white;
-  height: 45px;
-  width: 100%;
-  border-radius: 0.25em;
-  text-align: left;
-  color: black;
-}
-
-.form-group input:hover {
-  background-color: #c2c6fed9;
-  color: #2734e0;
-}
-
-input:focus {
-  outline-color: rgb(42, 42, 42);
-}
-
-.form-group label {
-  padding: 0px;
-}
-

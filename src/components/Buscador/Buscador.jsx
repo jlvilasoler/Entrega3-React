@@ -17,10 +17,6 @@ const Buscador = () => {
             return
         }
 
-        const searchRegex = new RegExp(value, "i");
-
-
-        
         setSearchParams({
             search: value
         })

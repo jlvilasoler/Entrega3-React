@@ -1,71 +1,58 @@
-.intro-form {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.contacto {
-  max-width: 35em;
-  padding: 1.9em;
-  background-color: rgb(42, 42, 42);
-  font-weight: bold;
-  border-radius: 15px;
-  box-shadow: inset 1px 1px 1px 1px;
-  color:#ffffff;
-  margin: 50px auto;
-  height: 1230px;
-  margin-top: 150px;
-}
-
-
-.contactanos {
-  background-color: rgb(42, 42, 42);
-  text-align: center;
-  padding: 20px;
-  margin:0%;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
-
-.contacto .container-form {
-  background-color: rgb(42, 42, 42);
-  height: 1100px;
-}
-
-.form-control:hover{
-  background-color: white;   
-  color: crimson;
-}
-
-
-.div .form-group {
-  font-size: 90px;
-  height: 100px;
-}
-
-.label {
-  font-size: 13px;
-  padding-top: 15px;
-}
 
 .boton-form-enviar {
-  background-color:#0512c6;
-  color: white;
-  width: 30%;
-  height: 50px;
-  border-radius: 10px;
-  border-color: #101ff8;
+
+  height: 55px;
+  width: 230px;
+  background-color: rgb(0, 17, 164);
+  font-style: none;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border-color: rgb(0, 0, 0);
+  font-size: 25px;
+  padding-top: 8px;
+  text-decoration: none;
 }
 
 .boton-form-enviar:hover {
-  background-color:#3bc849;
-  color: rgb(0, 0, 0);
-  border-color: #707070;
-}
-
-.botones-contacto {
-  padding-top: 20px;
-  padding-left: 150px;
+  background-color: rgb(36, 47, 205);
+  color: rgb(255, 255, 255);
+  border-color: rgb(202, 202, 202);
 }
 
 
+
+.boton-form-cancelar {
+
+  height: 55px;
+  width: 230px;
+  background-color: rgb(0, 17, 164);
+  font-style: none;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border-color: rgb(0, 0, 0);
+  font-size: 25px;
+  padding-top: 8px;
+  text-decoration: none;
+}
+
+.boton-form-cancelar:hover {
+  background-color: rgb(36, 47, 205);
+  color: rgb(255, 255, 255);
+  border-color: rgb(202, 202, 202);
+}
+
+
+
+.form-control {
+  width: 300px;
+}
+
+.intro-form{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.container-total {
+  margin-left: 418px;
+  padding-top: 80px;
+}

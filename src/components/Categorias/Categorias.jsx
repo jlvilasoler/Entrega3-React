@@ -13,6 +13,8 @@ function SizesExample() {
     useEffect(() => {
         window.addEventListener("click", clickear)
 
+
+
         return () => {
             window.removeEventListener("click", clickear)
         }
@@ -23,18 +25,18 @@ function SizesExample() {
 
             <section class="botones">
 
-                    <div className="btncat">
+                <div className="btncat">
                     <Link className="boton" to="/productos/perfumeria">PERFUMERIA</Link>
-                    </div>
+                </div>
 
-                    <div className="btncat">
+                <div className="btncat">
                     <Link className="boton" to="/productos/limpieza">LIMPIEZA</Link>
-                    </div>
+                </div>
 
-                    <div className="btncat">
+                <div className="btncat">
                     <Link className="boton" to="/productos/almacen">ALMACEN</Link>
                 </div>
-                    
+
                 <div className="btncat">
                     <Link className="boton" to="/productos/bebidas">BEBIDAS</Link>
                 </div>

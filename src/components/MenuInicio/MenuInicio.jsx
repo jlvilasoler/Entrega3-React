@@ -6,6 +6,7 @@ import { AuthContext } from '../../context/AuthContext';
 
 const MenuInicio = () => {
 
+
     const {login, googleLogin} = useContext(AuthContext)
  
     const [values, setValues] = useState({
@@ -20,8 +21,6 @@ const MenuInicio = () => {
             [e.target.name]: e.target.value
         })
     }
-
-
 
 
     const handleSubmit = (e) => {
