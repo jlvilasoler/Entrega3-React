@@ -44,20 +44,22 @@ const Checkout = () => {
             alert("Para completar la operación, se deben completar todos los campos");
             return;
         } else {
+            const orden = {
+                cliente: values,
+                items: cart,
+                total: totalCompra(),
+                fecha: new Date()
+            }
+    
+            const ordersRef = collection(db, "orders")
+            addDoc(ordersRef, orden)
+            .then((doc) => console.log(doc.id))
+            .catch(error => console.log(error))
             alert("Compra efectuada con exito. Muchas gracias!");
             return;
         }
     }
-        const orden = {
-            cliente: values,
-            items: cart,
-            total: totalCompra(),
-            fecha: new Date()
-        }
 
-        const ordersRef = collection(db, "orders")
-        addDoc(ordersRef, orden)
-        .then((doc) => console.log(doc.id))
     
 
     if (cart.length === 0) {
