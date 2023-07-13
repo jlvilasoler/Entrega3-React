@@ -5,54 +5,52 @@
     padding: 6px;
     height: 39px;   
     border-radius: 1px 1px 10px 1px ;
-}
 
-.buscador {
-    background-color: white;
-}
+    .buscador {
+        background-color: white;
+    }
+    .boton-buscar {
+        background-color: rgb(217, 48, 36);
+        border-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        border-radius: 0px 40px 40px 00px ; 
+        width: 45px;
+        text-align: center;
+        cursor: pointer;
+        transition: .5%;
+        justify-content: 10px;
+    }
 
-.boton-buscar {
-    background-color: rgb(217, 48, 36);
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    border-radius: 0px 40px 40px 00px ; 
-    width: 45px;
-    text-align: center;
-    cursor: pointer;
-    transition: .5%;
-    justify-content: 10px;
-}
+    .search .form-control{
+        border-radius: 5px 1px 1px 5px ;
+        background-color: white;
+        border-radius: 20px;
+    
+    }
 
-.search .form-control{
-    border-radius: 5px 1px 1px 5px ;
-    background-color: white;
-    border-radius: 20px;
-
-}
-
-.search .form-control:hover{
-    background-color: white;   
-    color: crimson;
-}
-
-.form .search {
-    color:aqua
+    .search .form-control:hover{
+        background-color: white;   
+        color: crimson;
+    }
+    .form .search {
+        color:aqua
+    }
+    .boton-borrar {
+        margin-left: 4.5px;
+        background-color: rgb(230, 230, 230);
+        width: 35px;
+        color: rgb(0, 0, 0);
+        border-color: rgb(255, 255, 255);
+        border-radius: 7px 0px 0px 7px ; 
+    }
 }
 
 .form-control{
 background-color: bisque;
-
     }
 
 
-.boton-borrar {
-    margin-left: 4.5px;
-    background-color: rgb(230, 230, 230);
-    width: 35px;
-    color: rgb(0, 0, 0);
-    border-color: rgb(255, 255, 255);
-    border-radius: 7px 0px 0px 7px ; 
-}
+
 
 
 

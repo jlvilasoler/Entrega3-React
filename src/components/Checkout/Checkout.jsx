@@ -6,7 +6,8 @@ import { db } from "../../firebase/config"
 
 const Checkout = () => {
 
-    const { cart, totalCompra } = useCartContex()
+    const [orderId, setOrderId] = useState(null)
+    const { cart, totalCompra, vaciarCarrito } = useCartContex()
     
     const [values, setValues] = useState({
         nombre: "",
@@ -53,14 +54,27 @@ const Checkout = () => {
     
             const ordersRef = collection(db, "orders")
             addDoc(ordersRef, orden)
-            .then((doc) => console.log(doc.id))
+            .then((doc) =>{
+            setOrderId(doc.id)
+            vaciarCarrito()})
             .catch(error => console.log(error))
             alert("Compra efectuada con exito. Muchas gracias!");
             return;
         }
+
+
+
     }
 
-    
+    if (orderId) {
+        return (
+            <div className="container my-5">
+                            <h1>Compra exitosa.</h1>
+                            <p>Tu ticket de compra es el: <strong>{orderId}</strong></p>
+        <hr />
+            </div>
+        )
+    }
 
     if (cart.length === 0) {
         return <Navigate to="/" />
