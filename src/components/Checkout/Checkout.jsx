@@ -58,15 +58,15 @@ const Checkout = () => {
     if (outOfStock.length === 0) {
       batch.commit()
         .then(() => {
-          addDoc(ordersRef, orden)
+          addDoc(ordersRef, orden) 
             .then((doc) => {
               setOrderId(doc.id)
               vaciarCarrito()
             })
-            .catch(err => console.log(err))
+            .catch(error => console.log(error))
         })
     } else {
-      alert("Hay items sin stock")
+      alert("Hay algún producto seleccionado sin stock")
     }
   }
 

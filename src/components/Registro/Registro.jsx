@@ -5,6 +5,7 @@ import { AuthContext } from '../../context/AuthContext';
 
 const Registro = () => {
 
+
     const { register } = useContext(AuthContext)
 
     const [values, setValues] = useState({
@@ -56,8 +57,11 @@ const Registro = () => {
             return;
         }
 
+
     }
 
+
+    
     return (
 
 

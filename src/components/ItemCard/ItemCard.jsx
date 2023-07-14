@@ -17,8 +17,13 @@ const ItemCard = ({ id, foto , articulo , descripcion , marca , precio, stock}) 
       <p className="precio">${precio.toFixed(2)}</p>
       
       {
-      stock <=100 && <h6 style={{fontWeight: 200 , color: "red", paddingBottom: "15px"}}>Quedan solo {stock} unidades</h6>
-      }
+  stock <= 10 ? (
+    <h6 style={{ fontWeight: 200, color: "red", paddingBottom: "15px" }}>Quedan {stock} unidades</h6>
+  ) : (
+    <h6 style={{ fontWeight: 200, color: 'rgb(244, 244, 244)', paddingBottom: "15px" }}>-</h6>
+  )
+}
+
 
       <Link className="boton-ver" to={`/detail/${id}`}>Ver más</Link>
 

@@ -5,7 +5,7 @@ function Nosotros() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+      }, []);
 
     const clickear = (e) => {
         console.log("click")

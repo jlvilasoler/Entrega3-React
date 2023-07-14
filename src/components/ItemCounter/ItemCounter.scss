@@ -14,7 +14,7 @@
     border-radius: 8px;
   }
 
-  .btn-agregar {
+  .btn-agregar-carrito {
     margin: 0 auto;
     height: 55px;
     width: 230px;
@@ -29,4 +29,36 @@
     background-color: rgb(71, 192, 71);
     border-color: rgb(5, 173, 5);
     color: rgb(231, 231, 231);
+  }
+
+  .btn:disabled {
+    background-color: gray;
+    color: white;    
+    margin: 0 auto;
+    height: 55px;
+    width: 55px;
+    border-radius: 8px;
+    border-color: rgb(175, 23, 23);
+  }
+
+  .btn-agregar-sin-stock {
+    margin: 0 auto;
+    height: 55px;
+    width: 230px;
+    background-color: rgba(86, 85, 85, 0.698);
+    color: white;
+    border-radius: 8px;
+    border-color: rgb(83, 83, 83);
+    font-size: 25px;
+  }
+
+  .btn-agregar-sin-stock:hover {
+    margin: 0 auto;
+    height: 55px;
+    width: 230px;
+    background-color: rgba(138, 134, 134, 0.123);
+    color: white;
+    border-radius: 8px;
+    border-color: rgb(103, 103, 103);
+    font-size: 25px;
   }

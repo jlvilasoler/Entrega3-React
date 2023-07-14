@@ -1,7 +1,7 @@
 import "../ItemCounter/ItemCounter.scss"
 
 
-const ItemCounter = ({max, cantidad, setCounter, handleAgregar}) => {
+const ItemCounter = ({max, cantidad, setCounter, handleAgregar, stock}) => {
 
     //Sumar al carrito
     const handleSumar = () => {
@@ -26,8 +26,8 @@ return (
 
             <br/>
 
-            <button onClick={handleAgregar} className="btn-agregar">Agregar a Carrito</button>
-
+        <button onClick={handleAgregar} className="btn-agregar-carrito" disabled={max <= 0}>Agregar a Carrito</button>
+        
 
     </div>
 
