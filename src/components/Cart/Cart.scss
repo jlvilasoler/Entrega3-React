@@ -23,22 +23,6 @@ main>* {
         "footer";
 }
 
-//RESPONSIVE
-@media (min-width: 500px) {
-    main {
-        grid-template-areas:
-            "header header header"
-            "izquierda contenido derecha"
-            "footer footer footer";
-
-        grid-template-columns: 5fr 2fr 1fr;
-
-    }
-}
-
-
-
-
 //NOMBRAR AREAS
 header {
     grid-area: header;
@@ -59,7 +43,6 @@ aside:last-of-type {
 footer {
     grid-area: footer;
 }
-
 
 // TITULO MI CARRITO
 .micarrito {

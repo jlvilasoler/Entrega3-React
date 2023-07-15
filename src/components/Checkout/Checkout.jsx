@@ -5,6 +5,7 @@ import { collection, addDoc, writeBatch, query, where, documentId, getDocs } fro
 import { db } from "../../firebase/config"
 import { Navigate } from "react-router-dom"
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 
 const Checkout = () => {
 
@@ -114,12 +115,14 @@ const Checkout = () => {
         
 
 
-        
+
         <p>Por consultas comunicarse al 0800 - 1010 o al email: info@tiendaonline.uy</p>
       
         <p className="firma">El equipo de Tiendaonline.uy</p>
 
-
+        <div className="botones-carrito">
+                        <Link to={"/"} className="boton-seguir-comprando">Volver al Inicio</Link>
+                    </div>
       </div>
     )
   }
@@ -138,10 +141,12 @@ const Checkout = () => {
 
   return (
     <div className="container my-5">
+      <div>
       <h1>CHECK OUT</h1>
+      </div>
       <hr />
 
-      <h3 className="informacion-envio">Información de envío:</h3>
+      <h3 className="info-envio">Información de envío:</h3>
 
       <form className="form" onSubmit={handleSubmit}>
 
@@ -249,7 +254,7 @@ const Checkout = () => {
 
 <hr />
 
-<h3 className="medio-pago">Ingrese Medio de Pago:</h3>
+<h3 className="mediodepago">Ingrese Medio de Pago:</h3>
 
 <select type="text" placeholder="Tipo de Medio de Pago" values={values.mediopago} onChange={handleInputChange} className="form-control my-2" name="mediopago">
     <option value="Ingrese">Ingrese tipo de medio de pago</option>
