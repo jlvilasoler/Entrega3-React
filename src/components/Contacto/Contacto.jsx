@@ -1,55 +1,92 @@
 import "../Contacto/Contacto.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Formik } from "formik";
+import React, { useState, useEffect } from "react";
 
 function SizesExample() {
+    const [values, setValues] = useState({
+        nombre: "",
+        apellidos: "",
+        ciudad: "",
+        departamento: "",
+        email: "",
+        celular: "",
+        mensaje: "",
+    });
 
+    useEffect(() => {
+        window.scrollTo(1000, 0);
+    }, []);
 
-  const volverhome = () => {
-    window.location.replace("/");
-  };
+    const volverhome = () => {
+        window.location.replace("/");
+    };
 
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setValues({ ...values, [name]: value });
+    };
 
- return (
-    <div className="">
-      <h1 className="">CONTACTO</h1>
-      <hr className="hr" />
+    const handleSubmit = (event) => {
+        event.preventDefault();
 
-    
-    <Formik
-        initialValues={{
-            nombre: "",
-            apellidos: "",
-            ciudad: "",
-            departamento: "",
-            email: "",
-            celular: "",
-            mensaje: ""
-        }}
-        onSubmit={(values) => {
+        if (
+            values.nombre === "" ||
+            values.apellidos === "" ||
+            values.ciudad === "" ||
+            values.departamento === "" ||
+            values.email === "" ||
+            values.celular === "" ||
+            values.mensaje === ""
+        ) {
+            alert("Para completar la operación, se deben completar todos los campos");
+        } else {
             console.log(values);
-        }}
-    >
-        {({ values, handleChange, handleSubmit }) => (
+            alert("Mensaje enviado con exito!");
+            volverhome();
+        }
+    };
+
+    return (
+        <div className="container my-5">
+            <h1 className="">CONTACTO</h1>
+            <hr className="hr" />
+
             <form className="intro-form" onSubmit={handleSubmit}>
+                <label className="label" htmlFor="nombre"></label>
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Ingrese Nombre Completo"
+                    maxLength="20"
+                    autoComplete="off"
+                    value={values.nombre}
+                    onChange={handleInputChange}
+                    className="form-control"
+                />
 
-
-    
-                <label className="label" htmlFor="mensaje"></label>
-                <input type="text" placeholder="Ingrese Nombre Completo" maxLength="15" name="nombre" value={values.nombre} onChange={handleChange} className="form-control"></input>
-
-                <label className="label" htmlFor="mensaje"></label>
-                <input type="text" placeholder="Ingrese Apellidos" maxLength="15" name="apellidos" value={values.apellidos} className="form-control" onChange={handleChange} ></input>
-
-
+                <label className="label" htmlFor="apellidos"></label>
+                <input
+                    type="text"
+                    name="apellidos"
+                    placeholder="Ingrese Apellidos"
+                    maxLength="20"
+                    value={values.apellidos}
+                    onChange={handleInputChange}
+                    className="form-control"
+                />
 
                 <div className="form-group">
                     <hr className="hr" />
                 </div>
 
-
-                <label className="label" htmlFor="mensaje"></label>
-                <select name="ciudad" className="form-control" value={values.ciudad} onChange={handleChange} >
+                <label className="label" htmlFor="ciudad"></label>
+                <select
+                    name="ciudad"
+                    placeholder="Ingrese Ciudad"
+                    value={values.ciudad}
+                    onChange={handleInputChange}
+                    className="form-control"
+                >
                     <option value="Ingrese">Ingrese Ciudad/Localidad</option>
                     <option value="artigas">Artigas - Artigas</option>
                     <option value="bella union">Bella Unión - Artigas</option>
@@ -118,10 +155,14 @@ function SizesExample() {
                     <option value="Treinta y Tres">Treinta y Tres - Treinta y Tres</option>
                 </select>
 
-
-
-                <label className="label" htmlFor="mensaje"></label>
-                <select name="departamento" value={values.departamento} className="form-control" onChange={handleChange} >
+                <label className="label" htmlFor="departamento"></label>
+                <select
+                    name="departamento"
+                    placeholder="Ingrese Departamento"
+                    value={values.departamento}
+                    onChange={handleInputChange}
+                    className="form-control"
+                >
                     <option value="Ingrese">Ingrese Departamento</option>
                     <option value="Artigas">Artigas</option>
                     <option value="Rocha">Rocha</option>
@@ -144,39 +185,58 @@ function SizesExample() {
                     <option value="Treinta y Tres">Treinta y Tres</option>
                 </select>
 
+                <div className="form-group">
+                    <hr className="hr" />
+                </div>
+
+                <label className="label" htmlFor="email"></label>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Ingrese Email"
+                    maxLength="15"
+                    value={values.email}
+                    onChange={handleInputChange}
+                    className="form-control"
+                />
+
+                <label className="label" htmlFor="celular"></label>
+                <input
+                    type="text"
+                    name="celular"
+                    placeholder="Ingrese Celular"
+                    maxLength="15"
+                    value={values.celular}
+                    onChange={handleInputChange}
+                    className="form-control"
+                />
 
                 <div className="form-group">
                     <hr className="hr" />
                 </div>
 
-
-                <label className="label" htmlFor="mensaje"></label>
-                <input type="text" placeholder="Ingrese E-mail" maxLength="15" value={values.email} name="email" className="form-control" onChange={handleChange} ></input>
-
-
-
-                <label className="label" htmlFor="mensaje"></label>
-                <input type="text" placeholder="Ingrese Número de Celular" value={values.celular} name="celular" className="form-control" onChange={handleChange} ></input>
-
-
-                <div className="form-group">
-                    <hr className="hr" />
-                </div>
-
-
-                <label className="label" htmlFor="mensaje"></label>
-                <textarea name="mensaje" className="form-control" value={values.mensaje} cols="30" rows="10" placeholder="Deja tu mensaje" onChange={handleChange} ></textarea>
+                <label className="label" htmlFor="mensaje" ></label>
+                <textarea
+                    name="mensaje"
+                    placeholder="Ingrese Mensaje"
+                    maxLength="100"
+                    value={values.mensaje}
+                    onChange={handleInputChange}
+                    className="form-control"
+                    rows="8"
+                ></textarea>
 
                 <div className="container-total">
-                    <button type="submit" className="boton-form-enviar">Enviar</button>
-                    <button onClick={volverhome} className="boton-form-cancelar">Cancelar</button>
+                    <button type="submit" className="boton-form-enviar">
+                        Enviar
+                    </button>
+                    <button onClick={volverhome} className="boton-form-cancelar">
+                        Cancelar
+                    </button>
                 </div>
-                </form>
-      )}
-          </Formik>
-    </div>
-  );
+            </form>
+        </div>
+    );
 }
-
 
 export default SizesExample;

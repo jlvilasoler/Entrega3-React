@@ -2,10 +2,14 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../MenuInicio/MenuInicio.scss';
 import { AuthContext } from '../../context/AuthContext';
+import { useEffect } from 'react';
 
 
 const MenuInicio = () => {
 
+    useEffect(() => {
+        window.scrollTo(1000, 0);
+      }, []);
 
     const {login, googleLogin} = useContext(AuthContext)
  

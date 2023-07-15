@@ -4,8 +4,14 @@ import { useCartContex } from "../../context/CartContext"
 import { collection, addDoc, writeBatch, query, where, documentId, getDocs } from "firebase/firestore"
 import { db } from "../../firebase/config"
 import { Navigate } from "react-router-dom"
+import { useEffect } from "react"
 
 const Checkout = () => {
+
+    useEffect(() => {
+        window.scrollTo(1000, 0);
+      }, []);
+
   const [orderId, setOrderId] = useState(null)
   const { cart, totalCompra, vaciarCarrito } = useCartContex()
   const fecha = useMemo(() => new Date().toLocaleString(), [])

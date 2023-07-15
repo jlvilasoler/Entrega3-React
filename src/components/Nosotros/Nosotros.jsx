@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 function Nosotros() {
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo(1000, 0);
       }, []);
 
     const clickear = (e) => {
