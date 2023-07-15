@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "/src/components/ItemListContainer/ItemListContainer.scss"
 import ItemList from "../ItemList/ItemList";
+import Buscador from "../Buscador/Buscador"
 import { useState, useEffect } from 'react';
 //import { getData } from "../Helpers/GetData"
 import { useParams } from 'react-router-dom';
@@ -57,8 +58,16 @@ const ItemListContainer = () => {
 
 
     return (
+
+
+
     <div className="container">
       
+      <div className="barra-buscador">
+                <Buscador />
+            </div>
+
+
       {
         loading? <h3 className='cargando'>Cargando...</h3> : <ItemList items={listado}/>
       }

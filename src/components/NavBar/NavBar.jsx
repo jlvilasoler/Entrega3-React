@@ -1,7 +1,7 @@
 import "/src/components/NavBar/NavBar.scss"
 import CartWidget from "../CardWidget/CartWidget"
 import { Link } from "react-router-dom"
-import Buscador from "../Buscador/Buscador"
+
 import CounterNav from "../CounterNav/CounterNav"
 import { FaHome } from "react-icons/fa";
 import HeaderLinkLogin from "../HeaderLinkLogin/HeaderLinkLogin"
@@ -55,9 +55,7 @@ const Header = () => {
 
 
 
-            <div className="barra-buscador">
-                <Buscador />
-            </div>
+
 
             {/*
 {user.logged ? (
