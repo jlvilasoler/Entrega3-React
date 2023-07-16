@@ -61,9 +61,6 @@ const Registro = () => {
             }
         };
 
-      
-
-
     
     return (
 
