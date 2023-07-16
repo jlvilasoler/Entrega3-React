@@ -4,6 +4,9 @@ import "../ItemDetail/ItemDetail.scss"
 import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ItemDetail = ({ id, foto, articulo, descripcion, marca, precio, category, seccion, stock }) => {
     
     const {agregarAlCarrito, isInCart, handleSumar, handleRestar} = useContext(CartContext)
@@ -18,6 +21,16 @@ console.log(isInCart(id))
         const item = { id, foto, articulo, descripcion, marca, precio, category, seccion, stock, cantidad }
         
         agregarAlCarrito(item)
+        toast.success('Producto agregado al carrito!', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
     }
 
     const handleVolver = () => {

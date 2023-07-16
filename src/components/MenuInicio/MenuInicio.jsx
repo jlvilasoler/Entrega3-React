@@ -22,11 +22,16 @@ const MenuInicio = () => {
         })
     }
 
+    const volverinicio = () => {
+        window.location.replace("/Menuinicio");
+    };
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         login(values)
-
+        if (login=true)
+        volverinicio();
     };
 
     return (
