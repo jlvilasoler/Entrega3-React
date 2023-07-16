@@ -5,6 +5,9 @@ import { AuthContext } from '../../context/AuthContext';
 
 const Registro = () => {
 
+    const volverinicio = () => {
+        window.location.replace("/Menuinicio");
+    };
 
     const { register } = useContext(AuthContext)
 
@@ -29,8 +32,7 @@ const Registro = () => {
         })
     }
 
-
-
+    const [registroExitoso, setRegistroExitoso] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -49,16 +51,17 @@ const Registro = () => {
             values.ciudad === "" ||
             values.telefono === "" ||
             values.celular === ""
-        ) {
-            alert("Para completar el registro, se deben completar todos los campos");
-            return;
-        } else {
-            alert("Su registro fue completado de forma exitosa. Ya puede comenzar a comprar");
-            return;
-        }
+            ) {
+                alert("Para completar el registro, se deben completar todos los campos");
+                return;
+              } else {
+                alert("Su cuenta fue creada con éxito!");
+                setRegistroExitoso(true);
+                volverinicio();
+            }
+        };
 
-
-    }
+      
 
 
     

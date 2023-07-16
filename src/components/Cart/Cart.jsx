@@ -115,11 +115,7 @@ function Cart() {
 
                                 <br />
 
-                                {/*<div className="contador-cart">
-                                    <button className="btn btn-primary" onClick={sumarProducto}> ➕ </button>
-                                    <span className="display">{producto.cantidad}</span>
-                                    <button className="btn btn-primary" onClick={restarProducto}> ➖ </button>
-                                    </div>*/}
+        
 
                                 <br />
 
