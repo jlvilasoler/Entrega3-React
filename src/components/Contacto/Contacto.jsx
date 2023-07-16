@@ -2,6 +2,10 @@ import "../Contacto/Contacto.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from "react";
 
+
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function SizesExample() {
     const [values, setValues] = useState({
         nombre: "",
@@ -26,6 +30,8 @@ function SizesExample() {
         setValues({ ...values, [name]: value });
     };
 
+    const [enviado, setEnviado] = useState(false);
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -38,7 +44,16 @@ function SizesExample() {
             values.celular === "" ||
             values.mensaje === ""
         ) {
-            alert("Para completar la operación, se deben completar todos los campos");
+            toast.warn('Para completar el registro, se deben completar todos los campos', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
         } else {
             console.log(values);
             alert("Mensaje enviado con exito!");
@@ -238,5 +253,6 @@ function SizesExample() {
         </div>
     );
 }
+
 
 export default SizesExample;

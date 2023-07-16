@@ -10,11 +10,12 @@ import "../ItemDetail/ItemDetail"
 import "../ItemCounter/ItemCounter"
 
 
+
 function Cart() {
 
 
 
-    const { cart, totalCompra, cantidadProductos, vaciarCarrito, eliminarArticulo, totalIva, totalSinIva } = useContext(CartContext)
+    const { cart, totalCompra, cantidadProductos, vaciarCarrito, eliminarArticulo, totalIva, totalSinIva, vaciarCarritoAlert } = useContext(CartContext)
 
     const fecha = useMemo(() => new Date().toLocaleString(), [])
 
@@ -130,7 +131,7 @@ function Cart() {
                         ))
                     }
                     <div className="botones-carrito">
-                        <button onClick={vaciarCarrito} className="boton-vaciar-carrito"> Vaciar Carrito <FaTrashAlt /></button>
+                        <button onClick={vaciarCarritoAlert} className="boton-vaciar-carrito"> Vaciar Carrito <FaTrashAlt /></button>
                         <Link to={"/"} className="boton-seguir-comprando">Seguir Comprando</Link>
                     </div>
                 </div>

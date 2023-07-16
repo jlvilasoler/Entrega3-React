@@ -7,6 +7,9 @@ import { Navigate } from "react-router-dom"
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Checkout = () => {
 
     useEffect(() => {
@@ -73,7 +76,16 @@ const Checkout = () => {
             .catch(error => console.log(error))
         })
     } else {
-      alert("Hay algún producto seleccionado sin stock")
+      toast.warn('Hay algun producto seleccionado sin stock', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+    });
     }
   }
 
@@ -94,7 +106,16 @@ const Checkout = () => {
       values.tarjetacodigo === "" ||
       values.tarjetavencimiento === ""
     ) {
-      alert("Para completar la operación, se deben completar todos los campos");
+      toast.warn('Para completar la operación, se deben completar todos los campos', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+    });
       return;
     } else {
       crearOrden(values)

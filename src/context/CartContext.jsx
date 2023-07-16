@@ -1,5 +1,8 @@
 import { useState, createContext, useContext } from "react";
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export const CartContext = createContext()
 
 export const useCartContex = () => useContext(CartContext)
@@ -13,6 +16,17 @@ export const CartProvider = ({children}) => {
     }
   
     const eliminarArticulo = (id) => {
+      toast.success('Producto eliminado del carrito!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        type: "warning",
+        });
       setCart( cart.filter((producto) => producto.id != id ))
     }
 
@@ -40,7 +54,19 @@ export const CartProvider = ({children}) => {
       setCart([])
     }
 
-
+    const vaciarCarritoAlert = () => {
+      toast.warn('Productos eliminados del carrito!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+      setCart([])
+    }
 
 
 
@@ -54,7 +80,8 @@ export const CartProvider = ({children}) => {
             vaciarCarrito,
             eliminarArticulo,
             totalIva,
-            totalSinIva
+            totalSinIva,
+            vaciarCarritoAlert
         }}>
             {children}
             
