@@ -18,6 +18,11 @@ const MenuInicio = () => {
         password: ""
     })
 
+
+    const volverhome = () => {
+        window.location.replace("/");
+    };
+
     const handleInputChange = (e) => {
         console.log(e.target.name)
         setValues({
@@ -30,8 +35,11 @@ const MenuInicio = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         login(values)
-
+        volverhome();
     };
+
+
+
 
     return (
         <div className="row my-5">
