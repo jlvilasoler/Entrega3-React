@@ -66,7 +66,7 @@ const Registro = () => {
               } else {
                 alert("Su cuenta fue creada con éxito!");
                 setRegistroExitoso(true);
-                navigate('/MenuInicio');  
+                navigate('/');  
 
             }
         };

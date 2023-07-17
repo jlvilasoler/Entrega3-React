@@ -1,4 +1,3 @@
-
 import "./App.css";
 import { CartProvider } from "./context/CartContext";
 import { AuthContextProvider } from "./context/AuthContext";
