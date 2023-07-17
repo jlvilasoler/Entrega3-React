@@ -30,7 +30,7 @@ const MenuInicio = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         login(values)
-        if (login=true)
+        if (login===true)
         volverinicio();
     };
 

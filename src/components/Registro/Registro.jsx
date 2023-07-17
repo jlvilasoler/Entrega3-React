@@ -1,16 +1,13 @@
 import React, { useContext, useState } from 'react';
 import '../Registro/Registro.scss'
 import { AuthContext } from '../../context/AuthContext';
-
-
+import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Registro = () => {
 
-    const volverinicio = () => {
-        window.location.replace("/");
-    };
+    const navigate = useNavigate();
 
     const { register } = useContext(AuthContext)
 
@@ -69,7 +66,8 @@ const Registro = () => {
               } else {
                 alert("Su cuenta fue creada con éxito!");
                 setRegistroExitoso(true);
-                volverinicio();
+                navigate('/MenuInicio');  
+
             }
         };
 
