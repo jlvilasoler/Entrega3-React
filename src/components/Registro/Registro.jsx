@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Registro = () => {
 
     const volverinicio = () => {
-        window.location.replace("/Menuinicio");
+        window.location.replace("/");
     };
 
     const { register } = useContext(AuthContext)
