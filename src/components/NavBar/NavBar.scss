@@ -78,7 +78,7 @@
 }
 
 
-
+//Display Gasto Total:
 .contador-gasto-total {
   display: flex;
   font-size: 13px;
@@ -98,28 +98,30 @@
 
 
 //Boton LogOut:
-
 .panel-usuario {
   margin: 0 auto;
   display: flex;
   width: 100%;
   font-size: 10px;
   padding-bottom: 5px;
+
+  .btn.btn-danger{
+    margin-left: 30px;
+    font-size: 7px;
+    width: 50px;
+    height: 23px;
+  }
+  .panel-mail {
+    margin: 0 auto;
+    display: flex;
+    padding-top: 5px;
+    margin-left: 5px;
+    padding-right: 1700px;
+    flex-direction: row;
+    font-size: 10px;
+  }
+  
 }
 
-.btn.btn-danger{
-  margin-left: 30px;
-  font-size: 7px;
-  width: 50px;
-  height: 23px;
-}
 
-.panel-mail {
-  margin: 0 auto;
-  display: flex;
-  padding-top: 5px;
-  margin-left: 5px;
-  padding-right: 1700px;
-  flex-direction: row;
-  font-size: 10px;
-}
+

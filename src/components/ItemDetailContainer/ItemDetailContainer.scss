@@ -4,10 +4,11 @@
     padding-bottom: 40px;
     width: 1450px;
     min-height: 100vh;
+
+    .container-producto   .container-cargando {
+        font-size: 18px;
+        color: transparent;
+    }
 }
 
 
-.container-producto   .container-cargando {
-    font-size: 18px;
-    color: transparent;
-}

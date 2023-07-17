@@ -1,3 +1,17 @@
+.form-control {
+  width: 300px;
+
+  .form-control:hover {
+    border-color: rgb(202, 202, 202);
+    border-color: rgb(202, 202, 202);
+  }
+}
+
+.intro-form{
+  width: 400px;
+  height: 900px;
+  margin: 0 auto;
+  margin-top: 70px;
 
 .boton-form-enviar {
   height: 55px;
@@ -10,14 +24,13 @@
   font-size: 25px;
   padding-top: 8px;
   text-decoration: none;
-}
 
-.boton-form-enviar:hover {
-  background-color: rgb(36, 47, 205);
-  color: rgb(255, 255, 255);
-  border-color: rgb(202, 202, 202);
+  .boton-form-enviar:hover {
+    background-color: rgb(36, 47, 205);
+    color: rgb(255, 255, 255);
+    border-color: rgb(202, 202, 202);
+  }
 }
-
 
 .boton-form-cancelar {
   height: 55px;
@@ -30,28 +43,13 @@
   font-size: 25px;
   padding-top: 8px;
   text-decoration: none;
-}
 
-.boton-form-cancelar:hover {
-  background-color: rgb(36, 47, 205);
-  color: rgb(255, 255, 255);
-  border-color: rgb(202, 202, 202);
+  .boton-form-cancelar:hover {
+    background-color: rgb(36, 47, 205);
+    color: rgb(255, 255, 255);
+    border-color: rgb(202, 202, 202);
+  }
 }
-
-.form-control {
-  width: 300px;
-}
-
-.form-control:hover {
-  border-color: rgb(202, 202, 202);
-  border-color: rgb(202, 202, 202);
-}
-
-.intro-form{
-  width: 400px;
-  height: 900px;
-  margin: 0 auto;
-  margin-top: 70px;
 }
 
 .container-total {
